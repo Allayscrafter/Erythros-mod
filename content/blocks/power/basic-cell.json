@@ -1,0 +1,21 @@
+type: Battery
+name: Basic Cell
+description: battery
+health: 95
+size: 2
+category: power
+squareSprite: false
+consumes: {
+  powerBuffered: 6500
+}
+requirements: [
+  er-tin/25
+  er-bismuth/35
+]
+research: {
+  parent: solar-panel
+  }
+researchCost: [
+  er-tin/50
+  er-bismuth/30
+]

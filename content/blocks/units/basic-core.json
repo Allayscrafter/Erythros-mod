@@ -1,0 +1,11 @@
+type: Wall
+name: Basic unit core
+description: Used in unit production. 
+size: 2
+customShadow: true
+placeablePlayer: false
+requirements: [
+  er-bismuth/25
+  er-tin/18
+  er-basic-chip/20
+]

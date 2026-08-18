@@ -1,0 +1,78 @@
+type: GenericCrafter
+name: Veylon Synthesizer
+description: Alloys tin and bismuth and smelts it with silica gravel to create stannobismuth glass.
+size: 3
+health: 60
+squareSprite: false
+craftEffect: smeltsmoke
+hasLiquids: true
+hasItems: true
+outputItems: [
+  er-veylon/4
+]
+consumes: {
+power: 2.5
+  items: [
+    er-niobium/2
+    ]
+  liquids: [
+    er-hf-acid/0.15,
+    er-sulphroil/0.25
+  ]
+}
+craftTime: 180
+category: crafting
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-hf-acid
+      padTop: 2
+      padLeft: 17
+      padRight: 2
+      padBottom: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-hf-acid
+      padTop: 2
+      padLeft: 2
+      padRight: 17
+      padBottom: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-sulphroil
+      padTop: 2
+      padLeft: 7
+      padRight: 7
+      padBottom: 2
+    }
+    {
+      type: DrawBubbles
+      fill: false
+      color: 3F91AA
+      spread: 8
+    }
+    {
+    type: DrawCrucibleFlame
+    color: 3F91AA
+    alpha: 0.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+ambientSound: loopThoriumReactor
+ambientSoundVolume: 0.08

@@ -1,0 +1,9 @@
+type: liquid
+name: "[#3EA4B8]Algium[]"
+color: 3EA4B8FF
+flammability: 0
+explosiveness: 0
+heatCapacity: 2
+viscosity: 0.7
+temperature: 0.1
+blockReactive: false

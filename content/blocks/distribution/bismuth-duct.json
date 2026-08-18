@@ -1,0 +1,17 @@
+type: Duct
+name: Bismuth duct
+description: moves items
+category: distribution
+speed: 7
+health: 60
+bridgeReplacement: bismuth-bridge
+requirements: [
+  er-bismuth/1
+]
+junctionReplacement: bismuth-junction
+research: {
+  parent: er-core-astra
+  }
+researchCost: [
+  er-bismuth/20
+  ]

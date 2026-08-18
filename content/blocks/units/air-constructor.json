@@ -1,0 +1,30 @@
+type: UnitFactory
+size: 3
+health: 350
+configurable: false
+name: Unit constructor - Air
+description: Constructs tier 1 air units.
+squareSprite: false
+hasPower: true
+hasItems: true
+requirements: [
+  er-tin/260
+  er-bismuth/105
+  er-ferrous-alumina/65
+  er-basic-chip/40
+]
+category: units
+plans: [
+  {
+    type: FactoryUnitPlan
+    unit: bee
+    requirements: [
+      er-tin/25
+      er-basic-chip/15
+    ]
+    time: 960
+  }
+]
+consumes: {
+  power: 2
+}

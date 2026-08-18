@@ -1,0 +1,11 @@
+type: liquid
+name: "[#A995C9]Nitrogen[]"
+color: A995C9FF
+flammability: 0
+explosiveness: 0
+heatCapacity: 0.6
+temperature: 0.1
+gas: true
+gasColor: A995C9FF
+blockReactive: false
+coolant: true

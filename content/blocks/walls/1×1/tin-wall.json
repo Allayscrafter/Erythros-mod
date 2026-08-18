@@ -1,0 +1,17 @@
+type: wall
+name: Tin wall
+description: A basic wall made of tin. Protects structures from projectiles and can conduct power.
+size: 1
+armor: 5
+health: 320
+squareSprite: true
+category: defense
+conductivePower: true
+hasPower: true
+requirements: [er-tin/6]
+research: {
+  parent: bolt
+  }
+researchCost: [
+  er-tin/100
+  ]

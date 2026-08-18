@@ -1,0 +1,19 @@
+type: TractorBeamTurret
+name: node
+description: A plant
+consumes: {}
+health: 1280
+size: 1
+rotateSpeed: 3.6
+category: turret
+outlineRadius: 2
+range: 56
+outlineColor: 206633
+squareSprite: false
+drawTeamOverlay: false
+requirements:[copper/1]
+force: 4
+scaledForce: 1.1
+targetGround: true
+laserColor: 97294C
+laserWidth: 1

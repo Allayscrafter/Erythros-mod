@@ -1,0 +1,105 @@
+localizedName: Erythros
+description: Dark lithosphere with fallout-stained biomes
+alwaysUnlocked: true
+mesh: [
+  {
+    // basalt crust
+    type: NoiseMesh
+    planet: erythros
+    divisions: 5
+    seed: 17
+    radius: 0.52
+    color1: 1F2629FF
+    color2: 3A4448FF
+    octaves: 4
+    persistence: 1.0
+    scale: 0.9
+    mag: 1.2
+  }
+  {
+    // plants
+    type: NoiseMesh
+    planet: erythros
+    divisions: 5
+    radius: 0.51
+    seed: 83
+    color1: 5E6F2DFF
+    color2: 8A9A3AFF
+    octaves: 3.5
+    persistence: 0.55
+    mag: 1
+  }
+  {
+    // bauxite
+    type: NoiseMesh
+    planet: erythros
+    divisions: 5
+    seed: 141
+    radius: 0.39
+    color1: 6E2B22FF
+    color2: 9A4639FF
+    octaves: 3
+    persistence: 0.75
+    mag: 3.3
+  }
+  {
+    // stone
+    type: NoiseMesh
+    planet: erythros
+    seed: 211
+    divisions: 5
+    color1: 0E0F12FF
+    color2: 24262CFF
+    radius: 0.50
+    octaves: 4.2
+    persistence: 1.1
+    scale: 0.7
+    mag: 1.4
+  }
+]
+generator: {
+  octaves: 4
+  persistence: 0.58
+  scale: 52
+  mag: 0.78
+  thresh: 1.22
+  min: 120
+  max: 120
+  radMin: 260
+  radMax: 680
+  iceChance: 0.08
+  carbonChance: 0.41
+  berylChance: 0.02
+  ferricChance: 0.34
+}
+
+orbitRadius: 125
+sectorSize: 1
+startSector: 0
+orbitSpacing: 4
+radius: 0.56
+minZoom: 1.4
+drawOrbit: true
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowWaves: true
+clearSectorOnLose: true
+prebuildBase: false
+
+hasAtmosphere: true
+atmosphereRadIn: 0
+atmosphereRadOut: 0.15
+atmosphereColor: 6E7F3BFF
+iconColor: 7A8F42FF
+updateLighting: true
+bloom: true
+visible: true
+
+accessible: true
+sectorSeed: 21791
+defaultCore: er-core-astra
+parent: 000-barycentre
+solarSystem: 000-barycentre
+launchCandidates: []

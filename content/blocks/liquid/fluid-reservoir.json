@@ -1,0 +1,12 @@
+type: LiquidRouter
+name: Fluid reservoir 
+description: Stores a large amount of liquid or gas.
+size: 3
+hasLiquids: true
+squareSprite: false
+liquidCapacity: 1125
+category: liquid
+requirements: [
+  er-tin/155
+]
+liquidPadding: 2

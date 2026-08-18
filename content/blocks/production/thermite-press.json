@@ -1,0 +1,36 @@
+type: GenericCrafter
+name: Thermite press
+description: Turns ferrous alumina to Thermite using Anthracite
+size: 2
+health: 80
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  er-thermite/1
+]
+consumes: {
+power: 0.3333333333333333333
+  items: [
+    er-ferrous-alumina/1
+    er-anthracite/1
+  ]
+  liquids: [
+    er-steam/0.25
+  ]
+}
+craftTime: 180
+category: crafting
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+  ]
+}
+ambientSound: grinding
+ambientSoundVolume: 0.08

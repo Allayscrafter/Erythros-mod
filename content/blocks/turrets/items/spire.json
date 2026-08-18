@@ -1,0 +1,225 @@
+name: Spire
+description: A basic anti-air turret. Shoots flak ammo in a cone.
+type: ItemTurret
+size: 2
+squareSprite: false
+health: 440
+shootSound: shootDiffuse
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/45
+  er-bismuth/70
+]
+category: turret
+consumes: {
+  power: 0.6
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+shoot: {
+    shots: 5
+    shotDelay: 1
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -barrel
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: -1.5
+        recoilIndex: 0
+      }
+   ]
+   }
+recoils: 1
+outlineRadius: 3
+targetAir: true
+targetGround: false
+rotateSpeed: 1.5
+reload: 25
+range: 160
+inaccuracy: 40
+shootY: 6
+ammoPerShot: 4
+ammoTypes: {
+  er-bismuth: {
+    type: FlakBulletType
+    damage: 7
+    width: 7
+    height: 9.5
+    shrinkX:0
+    shrinkY:0
+    speed: 10
+    lifetime: 16
+    frontColor: 9D935AFF
+    backColor: AEA46BFF
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: AEA46BFF
+    colorTo: BFB57C00
+  }
+]
+	  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: AEA46BFF
+    colorTo: BFB57C00
+  }
+]
+shootEffect: [
+  {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 20
+    layer: 100.2
+    cone: 30
+    length: 20
+    interp: pow3Out
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: AEA46BFF
+    colorTo: 00000000
+  }
+]
+}
+er-stanno-bismuth-glass: {
+    type: FlakBulletType
+    damage: 6
+    width: 7
+    height: 9.5
+    shrinkX:0
+    shrinkY:0
+    speed: 10
+    lifetime: 12
+    frontColor: D7D7D7FF
+    backColor: E8E8E8FF
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: E8E8E8FF
+    colorTo: D7D7D700
+  }
+]
+	  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: E8E8E8FF
+    colorTo: D7D7D700
+  }
+]
+shootEffect: [
+  {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 20
+    layer: 100.2
+    cone: 30
+    length: 20
+    interp: pow3Out
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: E8E8E8FF
+    colorTo: 00000000
+  }
+]
+fragBullets: 3
+  fragRandomSpread: 0
+  fragSpread: 120
+  fragBullet: {
+    type: FlakBulletType
+    damage: 3
+    width: 2
+    height: 4
+    shrinkX:0
+    shrinkY:0
+    speed: 10
+    lifetime: 3.5
+    frontColor: D7D7D7FF
+    backColor: E8E8E8FF
+  hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.3
+    cone: 360
+    length: 15
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: E8E8E8FF
+    colorTo: D7D7D700
+  }
+  ]
+   despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: E8E8E8FF
+    colorTo: D7D7D700
+  }
+]
+  }
+}
+}
+research: {
+  parent: bolt
+  }
+researchCost: [
+  er-tin/350, er-bismuth/500
+  ]

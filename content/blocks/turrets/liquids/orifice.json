@@ -1,0 +1,84 @@
+name: Orifice
+description: shoot liquids
+type: ContinuousLiquidTurret
+health: 950
+size: 2
+range: 102.4
+liquidCapacity: 20
+shootEffect: shootLiquid
+shootSound: loopStream
+smokeEffect: none
+shootCone: 30
+hasLiquids: true
+outlineRadius: 3
+shootY: 4
+consumes: {
+power: 0.4
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+}
+ammoTypes: {
+    er-steam: {
+        type: ContinuousFlameBulletType
+        flareLength: 0
+        length: 102.4
+        width: 2
+        damage: 1
+        pierceCap: 4
+        hitEffect: none
+        despawnEffect: none  
+        hitColor: E6E6E6
+        colors: [
+              222222,
+              444444,
+              888888,
+              BBBBBB
+        ]
+        lightColor: 111111
+    }
+    er-xylogen: {
+        type: ContinuousFlameBulletType
+        flareLength: 0
+        length: 102.4
+        width: 2
+        damage: 2
+        pierceCap: 4
+        hitEffect: none
+        despawnEffect: none  
+        hitColor: E6E6E6
+        colors: [
+              207938,
+              319049,
+              42A160,
+              64C382
+        ]
+        lightColor: 64C382
+    }
+    er-sulfhexide: {
+        type: ContinuousFlameBulletType
+        flareLength: 0
+        length: 102.4
+        width: 2
+        damage: 3
+        pierceCap: 4
+        hitEffect: none
+        despawnEffect: none  
+        hitColor: E6E6E6
+        colors: [
+              375658,
+              486769,
+              597880,
+              8CABB3
+        ]
+        lightColor: 8CABB3
+    }
+}
+requirements: [
+  er-tin/80
+  er-bismuth/60
+  er-ferrous-alumina/100
+]
+buildCostMultiplier: 0.5
+category: turret

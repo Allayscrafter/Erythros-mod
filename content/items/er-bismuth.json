@@ -1,0 +1,14 @@
+type: Item
+name: "[#AEA46B]Bismuth[]"
+flammability: 0
+explosiveness: 0
+radioactivity: 0.05
+charge: 0.08
+hardness: 2
+color: AEA46BFF
+research: {
+  parent: er-tin
+  objectives: [
+    er-bismuth
+    ]
+  }

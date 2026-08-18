@@ -1,0 +1,30 @@
+type: UnitAssembler
+name: Unit assembler - Tank
+description: Creates tank units using payloads.
+size: 5
+category: units
+droneType: 00-elion-assembler
+requirements: [
+  er-tin/300
+  er-stanno-bismuth-glass/90
+  er-niobium/120
+  er-basic-chip/150
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: quanta
+    requirements: [
+      erythros-niobium-wheel/6
+      erythros-basic-core/1
+      erythros-large-niobium-wall/4
+      erythros-orifice/1
+    ]
+    time: 4800
+  }
+]
+squareSprite: false
+consumes: {
+  power: 5.5
+}
+areaSize: 11

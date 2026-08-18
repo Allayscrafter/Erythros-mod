@@ -1,0 +1,230 @@
+name: Bolt
+description: A basic twin-barrel turret. Fires alternating metal bolts.
+type: ItemTurret
+size: 2
+squareSprite: false
+health: 520
+shootSound: shootDuo
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/40
+  er-bismuth/35
+]
+category: turret
+consumes: {
+  power: 0.5
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+shoot: {
+  type: ShootAlternate
+  spread: 7
+  shotDelay: 20
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -barrel-left
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: -1.5
+        recoilIndex: 0
+      }    
+      {
+        type: RegionPart
+        suffix: -barrel-right
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: -1.5
+        recoilIndex: 1
+      }  
+   ]
+   }
+recoils: 2
+outlineRadius: 3
+targetAir: true
+targetGround: true
+rotateSpeed: 2
+reload: 20
+range: 120
+shootY: 6
+ammoPerShot: 2
+ammoTypes: {
+  er-tin: {
+    type: BasicBulletType
+    buildingDamageMultiplier: 0.85
+    damage: 16
+    width: 7
+    height: 9.5
+    shrinkX:0
+    shrinkY:0
+    speed: 10
+    lifetime: 12
+    frontColor: A0A7B3FF
+    backColor: B0B8C4FF
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: B0B8C4AA
+    colorTo: C1C9B300
+  }
+]
+	  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: B0B8C4AA
+    colorTo: C1C9B300
+  }
+]
+    trailColor: B0B8C4AA
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 1
+    trailWidth: 0.5
+    trailEffect: [
+  {
+    type: ParticleEffect
+    particles: 1
+    lifetime: 30
+    layer: 100.1
+    cone: 5
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: B0B8C4AA
+    colorTo: C1C9B300
+  }
+  ]
+shootEffect: [
+  {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 20
+    layer: 100.2
+    cone: 30
+    length: 20
+    interp: pow3Out
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: B0B8C4AA
+    colorTo: 00000000
+  }
+]
+}
+er-niobium: {
+    type: BasicBulletType
+    buildingDamageMultiplier: 0.85
+    damage: 28
+    width: 7
+    height: 9.5
+    shrinkX:0
+    shrinkY:0
+    speed: 10
+    lifetime: 12
+    frontColor: 44427AFF
+    backColor: 55538AFF
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 55538AFF
+    colorTo: 44427A00
+  }
+]
+	  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    line: true
+    lifetime: 30
+    layer: 100.3
+    cone: 60
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 55538AFF
+    colorTo: 44427A00
+  }
+]
+    trailColor: 55538AFF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 1
+    trailWidth: 0.5
+    trailEffect: [
+  {
+    type: ParticleEffect
+    particles: 1
+    lifetime: 30
+    layer: 100.1
+    cone: 5
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 55538AFF
+    colorTo: 66649A00
+  }
+  ]
+shootEffect: [
+  {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 20
+    layer: 100.2
+    cone: 30
+    length: 20
+    interp: pow3Out
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 55538AFF
+    colorTo: 00000000
+  }
+]
+}
+}
+research: {
+  parent: er-core-astra
+  }
+researchCost: [
+  er-tin/350, er-bismuth/150
+  ]

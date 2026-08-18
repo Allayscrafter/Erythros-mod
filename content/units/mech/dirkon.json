@@ -1,0 +1,77 @@
+type: mech
+name: Dirkon
+description: a
+outlineRadius: 2
+flying: false
+faceTarget: true
+speed: 0.6
+rotateSpeed: 7
+health: 390
+armor: 3
+itemCapacity: 35
+mechLegColor: 232323
+hitSize: 11
+clipSize: 25
+abilities: [
+  {
+    type: ShieldRegenFieldAbility
+    reload: 120
+    range: 80
+    amount: 8
+    max: 50
+  }
+]
+weapons: [
+  {
+    x: 6
+    y: 0.5
+    name: dirkon-weapon
+    reload: 20
+    top: false
+    rotate: false
+    mirror: true
+    shootSound: shoot
+    recoil: -10
+    alternate: true
+    bullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 4
+    damage: 45
+    targetAir: false
+    targetGround: true
+    frontColor: CCCC0022
+    backColor: CCCC0011
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 333300AA
+    colorTo: 33330000
+  }
+  ]
+  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 333300AA
+    colorTo: 33330000
+  }
+  ]
+  }
+ }
+]

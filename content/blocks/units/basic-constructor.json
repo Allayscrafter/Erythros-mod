@@ -1,0 +1,27 @@
+type: Constructor
+name: Basic constructor
+description: Constructs blocks for unit production.
+size: 3
+category: units
+requirements: [
+  er-tin/180
+  er-stanno-bismuth-glass/60
+  er-niobium/120
+] 
+hasPower: true
+consumes: {
+  power: 1.8
+  liquids: [
+    er-xylogen/0.25
+  ]
+}
+buildSpeed: 1
+
+filter: [
+  niobium-wheel, 
+  basic-core, 
+  large-niobium-wall
+]
+squareSprite: false
+conductivePower: true
+maxBlockSize: 2

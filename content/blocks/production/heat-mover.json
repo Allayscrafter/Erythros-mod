@@ -1,0 +1,31 @@
+type: HeatConductor
+name: Heat conductor
+description: Conducts heat and moves it forward.
+size: 1
+category: crafting
+requirements: [
+	er-tin/10
+	er-bismuth/8
+	er-ferrous-alumina/6
+]
+regionRotated1: 1
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+    {
+      type: DrawHeatOutput
+      suffix: -heat
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+    }
+  ]
+}

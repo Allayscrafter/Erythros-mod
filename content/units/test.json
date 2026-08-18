@@ -1,0 +1,21 @@
+type: crawl
+segments: 6
+segmentUnits: 6
+
+segmentUnit: arkyid
+segmentEndUnit: toxopid
+
+segmentSpacing: 40
+segmentLayerOrder: true
+
+segmentRotSpeed: 1
+segmentMaxRot: 30
+segmentRotationRange: 80
+
+segmentMag: 2
+segmentScl: 4
+segmentPhase: 5
+
+crushDamage: 20
+crawlSlowdown: 0.5
+crawlSlowdownFrac: 0.55

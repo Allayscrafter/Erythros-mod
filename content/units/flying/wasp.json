@@ -1,0 +1,159 @@
+name: Wasp
+description: flying unit
+type: flying
+flying: true
+faceTarget: true
+health: 270
+armor: 3
+speed: 2.4
+engineSize: 0
+accel: 0.2
+drag: 0.1
+lowAltitude: false
+groundLayer: 40
+shadowElevation: 0.1
+rotateSpeed: 3
+itemCapacity: 20
+hitSize: 21
+fogRadius: 0
+engines: []
+weapons: [
+{
+    x: 3.5
+    y: 2
+    name: wasp-weapon
+    reload: 90
+    top: false
+    rotate: false
+    mirror: true
+    shootSound: shoot
+    recoil: 0
+    alternate: true
+    shoot: {
+    shots: 3
+    shotDelay: 3
+    }
+    bullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 16
+    damage: 26
+    width: 5
+    height: 8
+    frontColor: E6B800FF
+    backColor: D5A700FF
+    trailColor: E6B800
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 4
+    trailWidth: 0.5
+    trailEffect: [
+    {
+    type: ParticleEffect
+    particles: 1
+    lifetime: 30
+    layer: 100.1
+    cone: 5
+    length: 20
+    interp: pow3Out
+    sizeFrom: 0.7
+    sizeTo: 0
+    colorFrom: E6B800CC
+    colorTo: D5A70000
+    }
+    ]
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: E6B800CC
+    colorTo: D5A70000
+  }
+  ]
+  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: E6B800CC
+    colorTo: D5A70000
+  }
+  ]
+  }
+ }
+]
+abilities: [
+    {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 15
+    x: 5.5
+    y: -3.5
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+        type: MultiEffect
+        effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: test-mod-bee-rotor
+          particles: 1
+          length: 0
+          spin: 10
+          lifetime: 15
+          sizeFrom: 8
+          sizeTo: 8
+          baseRotation: 0
+          lightOpacity: 0
+        }
+        ]
+        }
+    }
+    {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 15
+    x: -5.5
+    y: -3.5
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+        type: MultiEffect
+        effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: test-mod-bee-rotor
+          particles: 1
+          length: 0
+          spin: 10
+          lifetime: 15
+          sizeFrom: 8
+          sizeTo: 8
+          baseRotation: 0
+          lightOpacity: 0
+        }
+        ]
+        }
+    }
+]

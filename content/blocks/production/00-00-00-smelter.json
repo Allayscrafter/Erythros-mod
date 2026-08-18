@@ -1,0 +1,23 @@
+type: UnitFactory
+size: 3
+health: 100
+configurable: true
+name: Hidden Alloy Smelter
+description: Output recipes for real smelter deconstructor.
+squareSprite: false
+hasPower: true
+hasItems: true
+hasLiquids: true
+plans: [
+  {
+    type: FactoryUnitPlan
+    unit: dense
+    requirements: [
+      er-dense-alloy/30
+    ]
+    time: 300
+  }
+]
+consumes: {
+  power: 3
+}

@@ -1,0 +1,71 @@
+type: GenericCrafter
+name: Polyphosphazene Synthesizer
+description: purple plastic
+size: 3
+health: 60
+squareSprite: false
+craftEffect: [surgeCruciSmoke, surgeCruciSmoke, surgeCruciSmoke]
+hasLiquids: true
+hasItems: true
+outputItems: [
+  er-phosphazene/4
+]
+consumes: {
+power: 2.5
+  items: [
+    er-corundum/3
+    ]
+  liquids: [
+    er-nitro/0.2,
+    er-w-phos/0.25
+  ]
+}
+craftTime: 180
+category: crafting
+requirements: [
+  er-nickel/50
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-nitro
+      padTop: 17
+      padLeft: 2
+      padRight: 2
+      padBottom: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-nitro
+      padTop: 2
+      padLeft: 2
+      padRight: 2
+      padBottom: 17
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-w-phos
+      padTop: 7
+      padLeft: 2
+      padRight: 2
+      padBottom: 7
+    }
+    {
+    type: DrawArcSmelt
+    flameColor: 8E50CC
+    midColor: 8E50CC
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+ambientSound: loopThoriumReactor
+ambientSoundVolume: 0.2

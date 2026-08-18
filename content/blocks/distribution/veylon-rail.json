@@ -1,0 +1,31 @@
+type: StackConveyor
+name: Stack rail
+description: Packages stacks of items before sending them off. Outputs items in three directions at the end.
+speed: 0.075
+itemCapacity: 50
+health: 40
+category: distribution
+glowColor: 00C8FF
+conductivePower: true
+consumes: {
+    power:0.6666666666666666666
+}
+requirements: [
+  er-tin/2
+]   
+loadEffect: {
+  type: ParticleEffect
+  length: 6
+  particles: 3
+  line: true
+  strokeFrom: 0.5
+  strokeTo: 0
+}
+unloadEffect: {
+  type: ParticleEffect
+  length: 6
+  particles: 3
+  line: true
+  strokeFrom: 0.5
+  strokeTo: 0
+}

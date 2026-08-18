@@ -1,0 +1,15 @@
+type: LogicBlock
+name: Logic node
+description: Runs logic instructions and can control buildings and units.
+category: logic
+requirements: [
+  er-tin/110
+  er-basic-chip/156
+  er-ferrous-alumina/40
+]
+instructionsPerTick: 1
+size: 2
+consumes: {
+    power: 1.5
+    }
+    squareSprite: false

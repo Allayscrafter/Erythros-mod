@@ -1,0 +1,12 @@
+type: MemoryBlock
+name: Memory Chip
+description: Stores logic instructions and values. 
+memoryCapacity: 64
+category: logic
+requirements: [
+  er-tin/110
+  er-bismuth/50
+  er-basic-chip/75
+]
+squareSprite: false
+size: 2

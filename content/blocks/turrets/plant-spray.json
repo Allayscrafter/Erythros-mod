@@ -1,0 +1,49 @@
+type: PowerTurret
+name: Spray
+description: A plant
+consumes: {}
+reload: 120
+health: 2960
+size: 1
+rotateSpeed: 3.6
+targetInterval: 90
+shoot: {
+  firstShotDelay: 90
+  shotDelay: 1
+  shots: 15
+}
+category: turret
+drawer: {
+  type: DrawTurret
+  basePrefix: plant-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -node
+        mirror: false
+        under: false
+        growX: 0.01
+        growY: 0.01
+        progress: life
+      }
+   ]
+}
+recoil: 0
+reloadTime: 180
+inaccuracy: 60
+outlineRadius: 2
+range: 48
+shootY: 2
+shootType: {
+    type: LiquidBulletType
+    speed: 3
+    lifetime: 16
+    damage: 32
+    liquid: er-hf-acid
+    shootEffect: none
+    smokeEffect: none
+}  
+outlineColor: 206633
+squareSprite: false
+drawTeamOverlay: false
+requirements:[copper/1]

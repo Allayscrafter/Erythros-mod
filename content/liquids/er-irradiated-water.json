@@ -1,0 +1,10 @@
+type: liquid
+name: "[#286566]Irradiated water[]"
+color: 286566FF
+flammability: 0
+explosiveness: 0
+heatCapacity: 0.5
+viscosity: 0.3
+temperature: 0.1
+blockReactive: false
+coolant: true

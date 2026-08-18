@@ -1,0 +1,7 @@
+type: Floor
+name: Solid rock
+description: Floor of rocky biome
+variants: 3
+attributes: {
+  magma: 0.2222222222222222222222222
+}

@@ -1,0 +1,10 @@
+type: liquid
+name: "[#7E8288]Gallium[]"
+color: 7E8288FF
+flammability: 0
+explosiveness: 0
+heatCapacity: 0.5
+viscosity: 0.7
+temperature: 1
+blockReactive: false
+effect: erythros-gallium-corossion 

@@ -1,0 +1,87 @@
+name: name
+description: laser
+type: ContinuousTurret
+size: 5
+squareSprite: false
+health: 2260
+shootSound: none
+loopSound: [beamPlasma]
+hasItems: false
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/550
+  er-bismuth/655
+]
+category: turret
+consumes: {
+  power: 26.5
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -top
+        mirror: false
+        under: false
+        progress: warmup
+        heatProgress: warmup
+        heatColor: 4FC3F7
+      }
+   ]
+  }
+recoil: 0
+outlineRadius: 3
+targetAir: true
+targetGround: true
+rotateSpeed: 1.5
+range: 275
+inaccuracy: 0
+shootY: 12
+shoot: {
+  firstShotDelay: 240
+  shots: 300
+  shotDelay: 1
+}
+shootType: {
+type: ContinuousFlameBulletType
+    flareLength: 0
+    length: 230
+    width: 16
+    damage: 160
+    pierceCap: 7
+    hitEffect: none
+    despawnEffect: none
+    chargeEffect: [
+      {
+        type: SoundEffect
+        sound: acceleratorCharge
+        minVolume: 0.5
+        maxVolume: 0.65
+        effect: [
+          {
+            type: SoundEffect
+            sound: chargeCorvus
+            startDelay: 120
+            effect: none
+          }
+        ]
+      }
+    ]
+    hitColor: E67676
+    colors: [
+          1E88E5,
+          42A5F5,
+          4FC3F7,
+          81D4FA
+    ]
+    lightColor: 1E88E5
+}

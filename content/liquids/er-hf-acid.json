@@ -1,0 +1,10 @@
+type: liquid
+name: "[#FFFFAA]Hydrofluoric acid[]"
+color: FFFFAAFF
+flammability: 0.2
+explosiveness: 0
+heatCapacity: 0.2
+viscosity: 0.2
+temperature: 0.5
+blockReactive: false
+effect: erythros-acid-burn

@@ -1,0 +1,44 @@
+type: ThermalGenerator
+name: Acid extractor
+description: Extracts hydrofluoric acid from acidic vents
+size: 3
+attribute: acid
+displayEfficiencyScale: 0.1
+displayEfficiency: false
+minEfficiency: 8
+powerProduction: 0
+generateEffect: turbinegenerate
+effectChance: 0.1
+squareSprite: false
+category: production
+hasLiquids: true
+hasPower: true
+outputLiquid: er-hf-acid/0.06
+requirements: [
+    er-tin/40
+]
+ambientSound: loopExtract
+ambientSoundVolume: 0.2
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-hf-acid
+      padding: 3
+    } 
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: -6
+    }
+    {
+      type: DrawDefault
+    } 
+  ]
+}

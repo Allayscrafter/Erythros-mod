@@ -1,0 +1,31 @@
+type: UnitFactory
+size: 3
+health: 350
+configurable: false
+name: Unit constructor - Mech
+description: Constructs tier 1 mech units.
+squareSprite: false
+hasPower: true
+hasItems: true
+requirements: [
+  er-tin/260
+  er-bismuth/105
+  er-ferrous-alumina/65
+  er-basic-chip/40
+]
+category: units
+plans: [
+  {
+    type: FactoryUnitPlan
+    unit: stilex
+    requirements: [
+      er-tin/25
+      er-bismuth/15
+      er-basic-chip/18
+    ]
+    time: 1200
+  }
+]
+consumes: {
+  power: 2
+}

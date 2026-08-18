@@ -1,0 +1,79 @@
+type: ConsumeGenerator
+name: Thermal generator
+description: Utilizes the temperature difference between water and magma to generate power.
+size: 3
+health: 270
+category: power
+consumes: {
+  liquids: [ er-pure-water/0.2, er-magma/0.06]
+}
+hasLiquids: true
+liquidCapacity: 30
+itemDuration: 60
+powerProduction: 3.1
+squareSprite: false
+requirements: [
+  er-tin/105
+  er-ferrous-alumina/25
+  er-bismuth/45
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-pure-water
+      padLeft: 2
+      padTop: 2
+      padBottom: 2
+      padRight: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -mid
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-magma
+      padLeft: 2
+      padTop: 10
+      padBottom: 10
+      padRight: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-magma
+      padLeft: 10
+      padTop: 14
+      padBottom: 2
+      padRight: 10
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-magma
+      padLeft: 10
+      padTop: 2
+      padBottom: 14
+      padRight: 10
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+    }
+  ]
+}
+research: {
+  parent: solar-panel
+  }
+researchCost: [
+  er-tin/50
+  er-bismuth/30
+  er-ferrous-alumina/20
+]

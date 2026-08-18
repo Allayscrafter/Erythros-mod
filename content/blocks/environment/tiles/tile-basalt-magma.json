@@ -1,0 +1,11 @@
+type: Floor
+name: Magmatic Basalt
+description: Floor of basalt biome
+variants: 3
+emitLight: true
+lightColor: C24A1A
+obstructsLight: false
+lightRadius: 56
+attributes: {
+  heat: 1.4
+}

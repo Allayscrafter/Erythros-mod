@@ -1,0 +1,10 @@
+type: MessageBlock
+name: Message node
+description: Stores a message for communication between allies.
+size: 1
+requirements: [
+  er-tin/18
+  er-basic-chip/30
+]
+category: logic
+squareSprite: false

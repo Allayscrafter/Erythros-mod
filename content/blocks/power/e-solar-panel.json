@@ -1,0 +1,18 @@
+type: SolarGenerator
+name: Solar panel
+description: Generates energy from sunlight
+health: 105
+size: 2
+category: power
+squareSprite: false
+powerProduction: 0.4
+requirements: [
+  er-tin/25
+  er-bismuth/25
+]
+research: {
+  parent: er-core-astra
+  }
+researchCost: [
+  er-tin/30, er-bismuth/40
+  ]

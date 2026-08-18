@@ -1,0 +1,45 @@
+type: GenericCrafter
+name: Explosive compound mixer
+description: Mixes thermite with sulfhexide to create explosive compound.
+size: 2
+health: 100
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  er-explosive-compound/1
+]
+consumes: {
+power: 0.5
+  items: [
+    er-thermite/1
+  ]
+  liquids: [
+    er-sulfhexide/0.33333333333333333333
+  ]
+}
+craftTime: 180
+category: crafting
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-sulfhexide
+      padding: 1
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+ambientSound: grinding
+ambientSoundVolume: 0.08

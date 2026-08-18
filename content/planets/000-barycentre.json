@@ -1,0 +1,33 @@
+localizedName: Polaryn-Rhethon System
+mesh: [
+{
+  type: SunMesh
+  divisions: 5
+  octaves: 1
+  persistence: 0.5
+  scl: 2.2
+  pow: 1
+  mag: 1
+  colorScale: 1.25
+  colors: [
+    000000, 
+    000000, 
+    000000, 
+    000000, 
+    000000
+  ]
+}
+]
+radius: 0.01
+accessible: true
+visible: true
+hasAtmosphere: false
+bloom: false
+orbitSpacing: 10
+solarSystem: 000-barycentre
+parent: sun
+orbitRadius: 10000
+drawOrbit: false
+tidalLock: true
+iconColor: BBBBBBFF
+icon: commandRally

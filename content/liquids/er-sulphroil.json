@@ -1,0 +1,10 @@
+type: liquid
+name: "[#4F4D36]Sulphroil[]"
+color: 2E2B14ff
+flammability: 0.8
+explosiveness: 0.4
+heatCapacity: 0.2
+viscosity: 0.85
+temperature: 0.1
+blockReactive: false
+coolant: false

@@ -1,0 +1,10 @@
+type: SwitchBlock
+name: Switch
+description: Helps logic processors by providing on and off values.
+size: 1
+category: logic
+requirements: [
+  er-tin/15
+  er-basic-chip/20
+]
+squareSprite: false

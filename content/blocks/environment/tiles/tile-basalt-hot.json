@@ -1,0 +1,12 @@
+type: Floor
+name: Hot Basalt
+description: Floor of basalt biome
+variants: 3
+blendGroup: tile-basalt
+emitLight: true
+lightColor: 7A2A14
+obstructsLight: false
+lightRadius: 35
+attributes: {
+  heat: 0.7
+}

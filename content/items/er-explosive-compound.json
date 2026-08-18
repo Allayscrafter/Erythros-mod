@@ -1,0 +1,7 @@
+type: Item
+name: "[#BD5431]Explosive Compound[]"
+flammability: 0.3
+explosiveness: 1.95
+radioactivity: 0
+charge: 0
+color: BD5431FF

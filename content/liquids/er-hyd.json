@@ -1,0 +1,11 @@
+type: liquid
+name: "[#95A3C9]Hydrogen[]"
+color: 95A3C9FF
+flammability: 0.5
+explosiveness: 0.4
+heatCapacity: 0.3
+temperature: 0.3
+gas: true
+gasColor: 95A3C9FF
+blockReactive: false
+coolant: false

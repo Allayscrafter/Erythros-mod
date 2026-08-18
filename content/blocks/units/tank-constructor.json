@@ -1,0 +1,30 @@
+type: UnitFactory
+size: 3
+health: 350
+configurable: false
+name: Unit constructor - Tank
+description: Constructs tier 1 tank units.
+squareSprite: false
+hasPower: true
+hasItems: true
+requirements: [
+  er-tin/260
+  er-bismuth/105
+  er-ferrous-alumina/65
+  er-basic-chip/40
+]
+category: units
+plans: [
+  {
+    type: FactoryUnitPlan
+    unit: binary
+    requirements: [
+      er-tin/30
+      er-basic-chip/20
+    ]
+    time: 900
+  }
+]
+consumes: {
+  power: 2
+}

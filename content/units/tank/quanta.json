@@ -1,0 +1,179 @@
+type: tank
+name: Quanta
+description: Fires a continuous laser that damages enemy units, can also heal structures and units.
+outlineRadius: 3
+treadPullOffset: 3
+omniMovement: false
+faceTarget: false
+controller: RepairAI
+commands: [move, repair, rebuild, assist, mine]
+speed: 1.1
+rotateSpeed: 4
+health: 2140
+armor: 6
+itemCapacity: 90
+hitSize: 24
+mineWalls: true
+mineSpeed: 10
+mineTier: 4
+buildSpeed: 0.8
+treadRects: [
+]
+weapons: [
+  {
+    x: 0
+    y: -1.5
+    name: quanta-weapon
+    rotate: true
+    rotateSpeed: 1.6
+    mirror: false
+    reload: 180
+    shootStatus: slow
+    shootStatusDuration: 120
+    shootSound: shootLaser
+    recoil: 1
+    continuous: true
+    shootY: 6
+    shoot: {
+      firstShotDelay: 90
+    }
+    bullet: {
+    type: ContinuousLaserBulletType
+    buildingDamageMultiplier: 0.8
+    length: 144
+    width: 3
+    damage: 62
+    lifetime: 100
+    fadeTime: 10
+    incendSpread: 0
+    incendAmount: 0
+    incendChance: 0
+    collidesTeam: true
+    healPercent: 4
+    colors: [228822, 228822, 559055, 77BB77, 99BB99]
+    chargeEffect: [
+    {
+    type: WaveEffect
+    sizeFrom: 16
+    sizeTo: 0
+    strokeTo: 3
+    lifetime: 40
+    colorFrom: 33BB3322
+    colorTo: 22882200
+    followParent: true
+   }
+   {
+    type: WaveEffect
+    sizeFrom: 16
+    sizeTo: 0
+    strokeTo: 3
+    lifetime: 90
+    colorFrom: 33BB3333
+    colorTo: 22882200
+    followParent: true
+   }
+    ]
+    shootEffect: [
+    {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 90
+    layer: 100.3
+    cone: 20
+    length: 45
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 99BB99FF
+    colorTo: 22882200
+    }
+    {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 110
+    layer: 100.3
+    cone: 20
+    length: 50
+    interp: pow3Out
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 33BB33FF
+    colorTo: 22882200
+    }
+    ]
+    despawnEffect: [
+    {
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 16
+    strokeTo: 5
+    lifetime: 40
+    colorFrom: 33BB3344
+    colorTo: 22882200
+    followParent: true
+   }
+   ]
+   hitEffect: [
+   {
+    type: ParticleEffect
+    particles: 10
+    line: true
+    lifetime: 60
+    layer: 100.3
+    cone: 20
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 33BB3322
+    colorTo: 22882200
+    }
+    ]
+   }
+  }
+  {
+    type: BuildWeapon
+    name: ternary-build
+    x: 9
+    y: 5
+    mirror: true
+  }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+    layer: 1
+    blinkSize: 0.2
+    damage: 15
+    reload: 60
+    healPercent: 0.25
+    hitUnits: true
+    hitBuildings: true
+    maxTargets: 7
+    range: 56
+    shootSound: spark
+    useAmmo: false
+    x: 3.4
+    y: -8
+    effectRadius: 0.4
+    sameTypeHealMult: 3
+  }
+  {
+    type: EnergyFieldAbility
+    layer: 1
+    blinkSize: 0.2
+    damage: 15
+    reload: 60
+    healPercent: 0.25
+    hitUnits: true
+    hitBuildings: true
+    maxTargets: 7
+    range: 56
+    shootSound: spark
+    useAmmo: false
+    x: -3.4
+    y: -8
+    effectRadius: 0.4
+    sameTypeHealMult: 3
+  }
+]

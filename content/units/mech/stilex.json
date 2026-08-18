@@ -1,0 +1,74 @@
+type: mech
+name: Stilex
+description: a
+outlineRadius: 3
+flying: false
+faceTarget: true
+speed: 0.65
+rotateSpeed: 7
+health: 280
+armor: 2
+itemCapacity: 25
+mechLegColor: 232323
+hitSize: 9
+abilities: [
+  {
+    type: ShieldRegenFieldAbility
+    reload: 120
+    range: 64
+    amount: 5
+    max: 35
+  }
+]
+weapons: [
+  {
+    x: -5.5
+    y: 2
+    name: stilex-weapon
+    reload: 30
+    top: false
+    rotate: false
+    mirror: true
+    shootSound: lasershoot
+    recoil: -6
+    alternate: false
+    targetAir: false
+    targetGround: true
+    bullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 4
+    damage: 35
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 333300AA
+    colorTo: 33330000
+  }
+  ]
+  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 333300AA
+    colorTo: 33330000
+  }
+  ]
+  }
+ }
+]

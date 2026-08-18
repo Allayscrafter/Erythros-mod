@@ -1,0 +1,14 @@
+type: item
+name: "[#7E7E8F]Tin[]"
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0.3
+hardness: 1
+color: 7E7E8FFF
+research: {
+  parent: er-core-astra
+  objectives: [
+    er-tin
+    ]
+  }

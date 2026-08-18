@@ -1,0 +1,71 @@
+type: AttributeCrafter
+attribute: magma
+name: Magma extractor
+description: Extracts magma from certain floor tiles using water as a coolant.
+size: 3
+health: 185
+category: production
+requirements: [
+  er-tin/75
+  er-bismuth/55
+]
+drillTime: 70
+consumes: {
+  power: 0.5
+  liquid: er-irradiated-water/0.05
+}
+outputLiquid: er-magma/0.18
+baseEfficiency: 0
+minEffeciency: 1
+maxBoost: 1
+displayEfficiency: true
+hasItems: false
+hasPower: true
+hasLiquids: true
+liquidCapacity: 45
+ambientSound: drill
+ambientSoundVolume: 0.15
+squareSprite: false
+research: {
+  parent: er-bauxite-compactor
+  }
+researchCost: [
+  er-tin/250, er-bismuth/200
+ ]
+  drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-magma
+      padLeft: 2
+      padTop: 2
+      padBottom: 2
+      padRight: 2
+    }
+    {
+    type: DrawArcSmelt
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+research: {
+  parent: pulse-drill
+  }
+researchCost: [
+  er-tin/50
+  er-bismuth/30
+]

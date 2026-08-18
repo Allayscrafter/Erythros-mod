@@ -1,0 +1,5 @@
+type: Floor
+name: Sandy rock
+description: sand of rocky biome
+variants: 3
+itemDrop: er-silica-gravel

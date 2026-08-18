@@ -1,0 +1,7 @@
+type: Floor
+name: Bauxitic floor
+description: A floor that contains trace amounts of gallium.
+variants: 4
+attributes: {
+  gallium: 0.0222222222222222222222222
+}

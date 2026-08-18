@@ -1,0 +1,42 @@
+type: TallBlock
+name: Plateleaf
+solid: false
+buildTime: 100
+requirements: [ er-plantmatter/30 ]
+breakable: true
+breakEffect: [
+{
+    type: ParticleEffect
+    particles: 25
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 18
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 22BB44DD
+    colorTo: 22BB4400
+  }
+]
+destroyEffect: [
+{
+    type: ParticleEffect
+    particles: 25
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 18
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 22BB44DD
+    colorTo: 22BB4400
+  }
+]
+shadowLayer: 35.1
+layer: 36
+variants: 2
+shadowOffset: -1.5
+customShadow: true
+category: effect

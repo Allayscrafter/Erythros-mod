@@ -1,0 +1,30 @@
+type: UnitFactory
+size: 3
+health: 450
+configurable: true
+name: Alloy Smelter
+description: Smelts alloys of different metals and outputs as solid blocks.
+squareSprite: false
+hasPower: true
+hasItems: true
+hasLiquids: true
+requirements: [
+  er-tin/100
+]
+category: crafting
+plans: [
+  {
+    type: FactoryUnitPlan
+    unit: dense
+    requirements: [
+      er-tin/10
+      er-bismuth/8
+      er-niobium/6
+      er-erythium/6
+    ]
+    time: 600
+  }
+]
+consumes: {
+  power: 3
+}

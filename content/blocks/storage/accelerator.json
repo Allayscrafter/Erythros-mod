@@ -1,0 +1,26 @@
+type: Accelerator
+name: magnet jumper
+description: Core flies
+size: 7
+health: 6000
+squareSprite: false
+category: crafting
+hasLiquids: true
+chargeRings: 7
+ringColor: 00C8FF
+lightningColor: 00C8FF
+launchBlock: er-core-astra
+powerBufferRequirement: 750000
+consumes: {
+  liquid: er-sulphroil/2
+  }
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+research: {
+  parent: er-core
+  }
+researchCost: [
+  er-bismuth/20
+  ]

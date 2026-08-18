@@ -1,0 +1,10 @@
+type: Prop
+name: Small bush
+buildTime: 45
+requirements: [ er-plantmatter/7 ]
+instantDeconstruct: false
+variants: 3
+shadowAlpha: 0.7
+shadowOffset: -1
+customShadow: false
+category: effect

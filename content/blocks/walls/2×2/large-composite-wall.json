@@ -1,0 +1,28 @@
+type: wall
+name: Large composite wall
+description: A larger version of composite wall.
+size: 2
+armor: 6
+health: 1640
+squareSprite: true
+category: defense
+destroyBullet: {
+  instantDisappear: true
+  damage: 0
+  speed: 0
+  fragBullets: 12
+  fragBullet: {
+    type: BasicBulletType
+    speed: 5
+    lifetime: 20
+    pierce: true
+    pierceCap: 2
+    damage: 15
+    width: 3
+    height: 5
+    homingPower: 0
+    mixColorFrom: BE4444FF
+    mixColorTo: 582020AA
+  }
+}
+requirements: [er-ferrous-alumina/24 , er-bismuth/16]

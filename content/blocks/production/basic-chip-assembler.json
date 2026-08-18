@@ -1,0 +1,66 @@
+type: GenericCrafter
+name: Basic chip assembler
+description: make chip
+size: 2
+health: 60
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  er-basic-chip/1
+]
+consumes: {
+power: 0.3333333333333333333
+  items: [
+    er-bismuth/1
+    er-stanno-bismuth-glass/2
+    ]
+  liquid: er-gallium/0.1
+}
+craftTime: 90
+category: crafting
+requirements: [
+  er-tin/50
+  er-bismuth/25
+  er-stanno-bismuth-glass/20
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-gallium
+      padding: 2
+      alpha: 0.65
+    }
+    {
+      type: DrawBubbles
+      fill: false
+      color: 444444
+    }
+    {
+      type: DrawRegion
+      suffix: -mid
+    }
+    {
+    type: DrawCrucibleFlame
+    x: -4
+    y: -4
+    flameRad: 1
+    circleSpace: 1
+    circleStroke: 1
+    particleLife: 25
+    particleRad: 4
+    alpha: 0.15
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+ambientSound: grinding
+ambientSoundVolume: 0.2

@@ -1,0 +1,51 @@
+type: GenericCrafter
+name: Lithium Decay Cell
+description: Converts Lithium into Hydrogen and Helium through nuclear reactions.
+size: 3
+hasLiquids: true
+hasItems: true
+squareSprite: false
+category: crafting
+consumes: {
+    power: 1.8
+    items: [
+      er-lithium/3
+    ]
+}
+outputLiquids: [
+    er-hyd/0.25,
+    er-helium/0.125
+]
+liquidOutputDirections: [1,3]
+dumpExtraLiquid: true
+rotate: true
+requirements: [
+    er-nickel/40
+]
+liquidCapacity: 60
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-hyd
+      padding: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-helium
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawLiquidOutputs
+    }
+  ]
+}

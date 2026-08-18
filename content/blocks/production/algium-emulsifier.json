@@ -1,0 +1,68 @@
+type: GenericCrafter
+name: Algium emulsifier.
+description: Emulsifies Pure Water and Sulphroil and mixes with powdered Niobium to create Algium.
+size: 3
+hasLiquids: true
+squareSprite: false
+category: crafting
+consumes: {
+    power: 2.7
+    liquids: [
+      er-pure-water/0.75
+      er-sulphroil/0.5
+    ]
+    items: [
+      er-niobium/3
+    ]
+}
+outputLiquid: er-algium/0.625
+requirements: [
+    er-tin/40
+    er-bismuth/40
+]
+liquidCapacity: 60
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-sulphroil
+      padLeft: 4
+      padTop: 4
+      padBottom: 9
+      padRight: 9
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-pure-water
+      padLeft: 9
+      padTop: 9
+      padBottom: 4
+      padRight: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -mid
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-algium
+      padLeft: 9
+      padTop: 9
+      padBottom: 9
+      padRight: 9
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+      color: 3EA4B8
+    }
+  ]
+}

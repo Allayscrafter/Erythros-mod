@@ -1,0 +1,17 @@
+type: DuctRouter
+name: Bismuth Router
+description: router
+regionRotated1: 1
+size: 1
+health: 60
+requirements: [
+    er-bismuth/6
+]
+category: distribution
+squareSprite: true
+research: {
+  parent: bismuth-duct
+  }
+researchCost: [
+  er-bismuth/50
+  ]

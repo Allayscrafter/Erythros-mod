@@ -1,0 +1,101 @@
+name: Sheaf
+description: An advanced anti air turret. Shoots flak ammo in a cone.
+type: ItemTurret
+size: 3
+squareSprite: false
+health: 440
+shootSound: shootDiffuse
+shootEffect: shootLiquid
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/45
+  er-bismuth/70
+]
+category: turret
+consumes: {
+  power: 0.9
+  liquid: er-steam/0.1
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+shoot: {
+    type: shootSpread
+    shots: 4
+    spread: 7.5
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -barrel
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: -2
+        recoilIndex: 0
+      }
+   ]
+}
+recoils: 1
+drawMinRange: true
+outlineRadius: 3
+targetAir: false
+targetGround: true
+rotateSpeed: 3
+reload: 45
+range: 223.2
+inaccuracy: 5
+shootY: 6
+ammoPerShot: 3
+ammoTypes: {
+  er-ferrous-alumina: {
+    type: artilleryBulletType
+    splashDamage: 22
+    splashDamageRadius: 16
+    splashDamagePierce: true
+    minRangeChange: 40
+	lifetime: 49.6
+	speed: 4.5
+	height: 12
+	width: 8
+	frontColor: BE4444FF
+    backColor: 9C2222FF
+  }
+  er-thermite: {
+    type: artilleryBulletType
+    splashDamage: 30
+    splashDamageRadius: 16
+    splashDamagePierce: true
+    minRangeChange: 56
+	lifetime: 49.6
+	speed: 4.5
+	height: 12
+	width: 8
+	frontColor: FF9A2EFF
+    backColor: D1A91D77
+    fragBullets: 2
+    fragBullet: {
+      type: artilleryBulletType
+      splashDamage: 4
+      splashDamageRadius: 8
+      splashDamagePierce: true
+  	lifetime: 6
+  	speed: 3
+  	height: 6
+  	width: 4
+      incendChance: 1
+      incendAmount: 2
+      incendSpread: 4
+  	frontColor: FF9A2EFF
+      backColor: D1A91D77
+    }
+  }
+}

@@ -1,0 +1,55 @@
+type: HeatProducer
+name: Magma heater
+description: Extracts heat from magma and outputs from one side. Outputs silica gravel as by-product.
+size: 3
+hasLiquids: true
+hasPower: true
+hasItems: false
+heatOutput: 6
+craftTime: 60
+squareSprite: false
+ambientSound: loopSmelter
+ambientSoundVolume: 0.2
+category: crafting
+requirements: [
+	er-tin/75
+	er-bismuth/35
+	er-stanno-bismuth-glass/45
+	er-ferrous-alumina/100
+]
+consumes: {
+	power: 0.333333333333
+	liquids: [
+		er-magma/0.3333333333333
+	]
+}
+outputItems: [
+	er-silica-gravel/1
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-magma
+      padLeft: 1
+      padTop: 1
+      padBottom: 1
+      padRight: 1
+    }
+    {
+      type: DrawRegion
+      suffix: -up
+    }
+    {
+      type: DrawGlowRegion
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}

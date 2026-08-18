@@ -1,0 +1,34 @@
+type: tank
+name: Dense Alloy Block
+description: A solid block made of dense alloy must be deconstructed before usage.
+outlineRadius: 0
+treadPullOffset: 0
+omniMovement: false
+faceTarget: false
+controller: RepairAI
+commands: []
+speed: 0
+rotateSpeed: 0
+health: 9200
+armor: 15
+hitSize: 16
+drawCell: false
+treadRects: []
+weapons: [
+{
+    x: 0
+    y: 0
+    reload: 10
+    rotate: false
+    mirror: false
+    recoil: 0
+    alwaysShooting: true
+    bullet: {
+        type: BasicBulletType
+        speed: 0
+        lifetime: 1
+        damage: 0
+        killShooter: true
+        }
+    }
+]

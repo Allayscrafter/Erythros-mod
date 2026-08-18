@@ -1,0 +1,44 @@
+type: ConsumeGenerator
+name: Fuel engine
+description: Consumes flammable fluids to generate power.
+size: 3
+health: 270
+category: power
+consumes: {
+  liquid: er-sulfhexide/0.5
+}
+hasLiquids: true
+hasItems: true
+liquidCapacity: 30
+itemDuration: 60
+powerProduction: 9
+squareSprite: false
+requirements: [
+  er-tin/105
+  er-ferrous-alumina/25
+  er-bismuth/45
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawGlowRegion
+    }
+  ]
+}
+research: {
+  parent: solar-panel
+  }
+researchCost: [
+  er-tin/50
+  er-bismuth/30
+  er-ferrous-alumina/20
+]

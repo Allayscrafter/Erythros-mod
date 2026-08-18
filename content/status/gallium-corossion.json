@@ -1,0 +1,19 @@
+name: Gallium corossion
+damage: 0.1
+effect: {
+  type: ParticleEffect
+  particles: 10
+  sizeFrom: 1.2
+  sizeTo: 0
+  colorFrom: ccccee
+  colorTo: 555577
+  length: 18
+  lifetime: 40
+  cone: 360
+  interp: pow3Out
+  sizeInterp: pow2Out
+  line: false
+}
+affinities: [shocked],
+        opposites: [tarred, freezing]
+speedMultiplier: 0.75

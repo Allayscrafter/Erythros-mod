@@ -1,0 +1,18 @@
+type: DirectionLiquidBridge
+name: Fluid bridge
+description: liquid jump
+size: 1
+health: 100
+range: 4
+solid: false
+requirements: [
+  er-tin/12
+]
+category: liquid
+squareSprite: true
+research: {
+  parent: fluid-junction
+  }
+researchCost: [
+  er-tin/50
+  ]

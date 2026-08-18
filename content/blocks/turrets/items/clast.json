@@ -1,0 +1,281 @@
+name: Clast
+description: Shoots bullets while slowly warming up. Shrapnel damages units that are very close.
+type: ItemTurret
+size: 3
+squareSprite: false
+health: 750
+shootSound: shootDuo
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/250
+  er-bismuth/125
+]
+category: turret
+consumes: {
+  power: 2
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.3
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -barrel
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: -2
+        recoilIndex: 0
+      }
+   ]
+   }
+recoilTime: 4
+outlineRadius: 3
+targetAir: true
+targetGround: true
+rotateSpeed: 3
+reload: 15
+range: 175
+shootY: 6
+ammoPerShot: 1
+ammoTypes: {
+    er-thermite: {
+    showStats: true
+    spawnBullets: [
+      {
+        type: ShrapnelBulletType
+        length: 48
+        width: 10
+        serrations: 0
+        damage: 42
+        fromColor: FF9A2EFF
+        toColor: D1A91D77
+      }
+    ]
+    type: basicBulletType
+	shootEffect: none
+	lifetime: 35
+	damage: 15
+	speed: 5
+	ammoMultiplier: 3
+	pierce: false
+	hitEffect: none
+	despawnEffect: none
+	frontColor: FF9A2EFF
+	backColor: EE891DFF
+	trailColor: E2BA2EFF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 4
+    trailWidth: 0.5
+    trailEffect: [
+      {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 30
+      layer: 100.1
+      cone: 5
+      length: 20
+      interp: pow3Out
+      sizeFrom: 0.7
+      sizeTo: 0
+      colorFrom: FF9A2EFF
+      colorTo: 11111100
+      }
+    ]
+    hitEffect: [
+      {
+      type: ParticleEffect
+      particles: 5
+      line: true
+      lifetime: 30
+      layer: 100.3
+      cone: 60
+      length: 20
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: FF9A2EFF
+      colorTo: D1A91D00
+      }
+    ]
+    despawnEffect: [
+      {
+      type: ParticleEffect
+      particles: 5
+      line: true
+      lifetime: 30
+      layer: 100.3
+      cone: 60
+      length: 20
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: FF9A2EFF
+      colorTo: D1A91D00
+      }
+    ]
+  }
+  er-niobium: {
+    showStats: true
+    spawnBullets: [
+      {
+        type: ShrapnelBulletType
+        length: 48
+        width: 10
+        serrations: 0
+        damage: 74
+        fromColor: 7571BEFF
+        toColor: 7571BE77
+      }
+    ]
+    type: basicBulletType
+	shootEffect: none
+	lifetime: 35
+	damage: 38
+	speed: 5
+	ammoMultiplier: 3
+	pierce: false
+	hitEffect: none
+	despawnEffect: none
+	frontColor: 7571BEFF
+	backColor: 6460ADFF
+	trailColor: 7571BEFF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 4
+    trailWidth: 0.5
+    trailEffect: [
+      {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 30
+      layer: 100.1
+      cone: 5
+      length: 20
+      interp: pow3Out
+      sizeFrom: 0.7
+      sizeTo: 0
+      colorFrom: 7571BEFF
+      colorTo: 7571BE00
+      }
+    ]
+    hitEffect: [
+      {
+      type: ParticleEffect
+      particles: 5
+      line: true
+      lifetime: 30
+      layer: 100.3
+      cone: 60
+      length: 20
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: 7571BEFF
+      colorTo: 7571BE00
+      }
+    ]
+    despawnEffect: [
+      {
+      type: ParticleEffect
+      particles: 5
+      line: true
+      lifetime: 30
+      layer: 100.3
+      cone: 60
+      length: 20
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: 7571BEFF
+      colorTo: 7571BE00
+      }
+    ]
+  }
+  er-erythium: {
+    showStats: true
+    spawnBullets: [
+      {
+        type: ShrapnelBulletType
+        length: 48
+        width: 10
+        serrations: 0
+        damage: 122
+        fromColor: 6F9D81FF
+        toColor: 5F8C70FF
+      }
+    ]
+    type: basicBulletType
+	shootEffect: none
+	lifetime: 35
+	damage: 62
+	speed: 5
+	ammoMultiplier: 3
+	pierce: false
+	hitEffect: none
+	despawnEffect: none
+	frontColor: 5F8C70FF
+	backColor: 437B59FF
+	trailColor: 5F8C70FF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 4
+    trailWidth: 0.5
+    trailEffect: [
+      {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 30
+      layer: 100.1
+      cone: 5
+      length: 20
+      interp: pow3Out
+      sizeFrom: 0.7
+      sizeTo: 0
+      colorFrom: 5F8C70FF
+      colorTo: 5F8C7000
+      }
+    ]
+    hitEffect: [
+      {
+      type: ParticleEffect
+      particles: 5
+      line: true
+      lifetime: 30
+      layer: 100.3
+      cone: 60
+      length: 20
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: 5F8C70FF
+      colorTo: 5F8C7000
+      }
+    ]
+    despawnEffect: [
+      {
+      type: ParticleEffect
+      particles: 5
+      line: true
+      lifetime: 30
+      layer: 100.3
+      cone: 60
+      length: 20
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: 5F8C70FF
+      colorTo: 5F8C7000
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+type: PayloadConveyor
+name: Payload carrier
+description: Transports payloads.
+category: units
+requirements: [
+  er-tin/15
+  er-bismuth/20
+]
+canOverdrive: false
+payloadLimit: 3

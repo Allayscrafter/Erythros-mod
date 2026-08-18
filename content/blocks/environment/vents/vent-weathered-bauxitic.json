@@ -1,0 +1,9 @@
+name: Weathered Bauxite Vent
+type: SteamVent
+blendGroup: tile-weathered-bauxitic
+parent: tile-weathered-bauxitic
+effect: ventSteam
+effectColor: D96BC4F0
+attributes: {
+   steam: 1
+}

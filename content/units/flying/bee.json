@@ -1,0 +1,150 @@
+name: Bee
+description: flying unit
+type: flying
+flying: true
+faceTarget: true
+health: 180
+armor: 2
+speed: 4
+engineSize: 0
+accel: 0.2
+drag: 0.1
+lowAltitude: false
+groundLayer: 40
+shadowElevation: 0.1
+rotateSpeed: 5
+itemCapacity: 10
+hitSize: 13
+fogRadius: 0
+engines: []
+weapons: [
+{
+    x: 0
+    y: 2
+    name: bee-weapon
+    reload: 30
+    top: false
+    rotate: false
+    mirror: false
+    shootSound: shoot
+    recoil: 0
+    alternate: false
+    bullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 20
+    damage: 250
+    sprite: erythros-bee-blade
+    killShooter: true
+    spin: 10
+    width: 8
+    height: 8
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 555555CC
+    colorTo: 55555500
+  }
+  ]
+  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 555555CC
+    colorTo: 55555500
+  }
+  ]
+  fragBullets: 1
+  fragRandomSpread: 20
+  fragSpread: 0
+  fragBullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 20
+    damage: 45
+    pierce: true
+    sprite: erythros-bee-blade
+    width: 8
+    height: 8
+    spin: 10
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 555555CC
+    colorTo: 55555500
+  }
+  ]
+  despawnEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 555555CC
+    colorTo: 55555500
+  }
+  ]
+  }
+  }
+ }
+]
+abilities: [
+    {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 15
+    x: 0
+    y: -2.5
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+        type: MultiEffect
+        effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: erythros-bee-rotor
+          particles: 1
+          length: 0
+          spin: 10
+          lifetime: 15
+          sizeFrom: 8
+          sizeTo: 8
+          baseRotation: 0
+          lightOpacity: 0
+        }
+        ]
+        }
+    }
+]

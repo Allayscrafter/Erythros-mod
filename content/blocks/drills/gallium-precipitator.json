@@ -1,0 +1,56 @@
+type: AttributeCrafter
+attribute: gallium
+name: Gallium Precipitator
+description: Mines bauxite from walls and compresses it with slag to produce Ferrous Alumina.
+size: 3
+category: production
+requirements: [
+  er-tin/150
+  er-bismuth/100
+]
+drillTime: 90
+consumes: {
+  liquid: er-magma/0.05
+}
+outputLiquid: er-gallium/0.08
+baseEfficiency: 0
+minEffeciency: 1
+maxBoost: 1
+displayEfficiency: true
+hasItems: true
+hasLiquids: true
+liquidCapacity: 50
+ambientSound: drill
+ambientSoundVolume: 0.15
+squareSprite: false
+research: {
+  parent: 13a-02-bauxite-compactor
+  }
+researchCost: [
+  er-tin/250, er-bismuth/200
+  ]
+  drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-magma
+      padLeft: 2
+      padTop: 2
+      padBottom: 2
+      padRight: 2
+    }
+    {
+    type: DrawCrucibleFlame
+    flameColor: CECECE
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

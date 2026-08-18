@@ -1,0 +1,69 @@
+type: ConsumeGenerator
+name: Steam turbine
+description: A turbine that uses pressurised steam to generate power.
+size: 3
+category: power
+consumes: {
+  liquid: er-steam/0.25
+}
+hasLiquids: true
+liquidCapacity: 30
+itemDuration: 60
+powerProduction: 3.75
+generateEffectRange: 0
+generateEffect: {
+  effect: {
+  type: ParticleEffect
+  particles: 10
+  sizeFrom: 2.5
+  sizeTo: 0.2
+  colorFrom: eeeeeeee
+  colorTo: eeeeee00
+  length: 15
+  lifetime: 40
+  cone: 360
+  interp: pow3Out
+  sizeInterp: pow2Out
+  line: false
+}
+}
+ambientSound: extractLoop
+ambientSoundVolume: 0.06
+squareSprite: false
+requirements: [
+  er-tin/100
+  er-stanno-bismuth-glass/50
+  er-bismuth/45
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid1
+      drawLiquid: er-steam
+      alpha: 0.7
+      padding: 2
+    } 
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 6
+    }
+    {
+      type: DrawRegion
+      suffix: -ac-rotator
+      spinSprite: true
+      rotateSpeed: -6
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    } 
+  ]
+}

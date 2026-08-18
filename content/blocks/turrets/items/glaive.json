@@ -1,0 +1,137 @@
+name: Glaive
+description: Shoots piercing shots that stick to the enemy and deals damage over time
+type: ItemTurret
+size: 3
+squareSprite: false
+health: 750
+shootSound: shootFuse
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/250
+  er-bismuth/125
+]
+category: turret
+consumes: {
+  power: 5.2
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.3
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -barrel
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: -2
+        recoilIndex: 0
+      }
+   ]
+   }
+outlineRadius: 3
+targetAir: true
+targetGround: true
+rotateSpeed: 3
+recoil: 1
+reload: 30
+range: 130
+shootY: 4.4
+ammoPerShot: 1
+ammoTypes: {
+  er-erythium: {
+    type: BasicBulletType
+    lifetime: 45
+    speed: 4
+    damage: 40
+    pierce: true
+	sticky: true
+	stickyExtraLifetime: 120
+	drag: 0.02
+	hitEffect: none
+	despawnEffect: none
+	frontColor: 6F9D81FF
+    backColor: 5F8C70FF
+    intervalBullets: 1
+    bulletInterval: 1
+    intervalSpread: 0
+    intervalRandomSpread: 0
+    intervalOffsetMin: 0
+    intervalOffsetMax: 0
+    intervalBullet: {
+      type: ShrapnelBulletType
+      length: 48
+      width: 10
+      serrations: 0
+      damage: 1.8
+      pierceArmor: true
+      fromColor: 6F9D81FF
+      toColor: 5F8C70FF
+    }
+    fragBullets: 2
+    fragSpread: 30
+    fragRandomSpread: 0
+    fragBullet: {
+      type: ShrapnelBulletType
+      length: 48
+      width: 10
+      serrations: 0
+      damage: 62
+      pierceArmor: true
+      fromColor: 6F9D81FF
+      toColor: 5F8C70FF
+    }
+  }
+  er-mesolite: {
+    type: BasicBulletType
+    lifetime: 60
+    speed: 4.3
+    damage: 78
+    pierce: true
+	sticky: true
+	stickyExtraLifetime: 120
+	drag: 0.02
+	hitEffect: none
+	despawnEffect: none
+	frontColor: C79E2CFF
+    backColor: A57C0AFF
+    rangeChange: 21
+    intervalBullets: 1
+    bulletInterval: 1
+    intervalSpread: 0
+    intervalRandomSpread: 0
+    intervalOffsetMin: 0
+    intervalOffsetMax: 0
+    intervalBullet: {
+      type: ShrapnelBulletType
+      length: 48
+      width: 10
+      serrations: 0
+      damage: 2.9
+      pierceArmor: true
+      fromColor: C79E2CFF
+      toColor: A57C0AFF
+    }
+    fragBullets: 3
+    fragSpread: 30
+    fragRandomSpread: 0
+    fragBullet: {
+      type: ShrapnelBulletType
+      length: 48
+      width: 10
+      serrations: 0
+      damage: 98
+      pierceArmor: true
+      fromColor: C79E2CFF
+      toColor: A57C0AFF
+    }
+  }
+}

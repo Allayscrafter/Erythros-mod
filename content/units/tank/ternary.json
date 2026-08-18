@@ -1,0 +1,141 @@
+type: tank
+name: Ternary
+description: Fires energy spheres at enemy. Can also heal structures.
+outlineRadius: 3
+treadPullOffset: 3
+omniMovement: false
+faceTarget: false
+controller: RepairAI
+commands: [move, repair, rebuild, assist, mine]
+speed: 1.45
+rotateSpeed: 5
+health: 540
+armor: 4
+itemCapacity: 30
+hitSize: 15
+mineWalls: true
+mineSpeed: 6
+mineTier: 2
+buildSpeed: 0.4
+treadRects: [
+   {
+    x: 20
+    y: -30
+    width: 11
+    height: 20
+   }
+   {
+    x: 20
+    y: 13
+    width: 16
+    height: 20
+   }
+]
+weapons: [
+  {
+    x: 3.3
+    y: -2
+    name: ternary-weapon
+    reload: 60
+    rotate: true
+    mirror: true
+    shootSound: shootLaser
+    recoil: 2
+    bullet: {
+    type: BasicBulletType
+    speed: 5.5
+    lifetime: 30
+    damage: 35
+    pierce: true
+    pierceCap: 2
+    sprite: erythros-heal-bullet-binary
+    collidesTeam: true
+    healPercent: 1.8
+    hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.3
+    cone: 360
+    length: 15
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 33BB33AA
+    colorTo: 33BB3300
+  }
+  ]
+    trailColor: 33BB33AA
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 7
+    trailWidth: 1.4
+    trailEffect: [
+  {
+    type: ParticleEffect
+    particles: 5
+    lifetime: 30
+    layer: 100.1
+    cone: 5
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 33BB33AA
+    colorTo: 33BB3300
+  }
+  ]
+  fragBullets: 3
+  fragRandomSpread: 0
+  fragSpread: 120
+  fragBullet: {
+    type: BasicBulletType
+    speed: 5
+    lifetime: 20
+    damage: 15
+    width: 3
+    height: 5
+    homingPower: 0.3
+    sprite: erythros-heal-bullet-binary
+    collidesTeam: true
+    healPercent: 0.5
+    trailColor: 33BB33AA
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 7
+    trailWidth: 1.4
+    trailEffect: [
+  {
+    type: ParticleEffect
+    particles: 1
+    lifetime: 30
+    layer: 100.1
+    cone: 5
+    length: 20
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 33BB33AA
+    colorTo: 33BB3300
+  }
+  ]
+  hitEffect: [
+  {
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.3
+    cone: 360
+    length: 15
+    interp: pow3Out
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 33BB33AA
+    colorTo: 33BB3300
+  }
+  ]
+  }
+  }
+  }
+]

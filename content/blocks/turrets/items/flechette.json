@@ -1,0 +1,253 @@
+name: Flechette
+description: An advanced anti air turret. Shoots flak ammo in a cone.
+type: ItemTurret
+size: 3
+squareSprite: false
+health: 440
+shootSound: shootDiffuse
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/45
+  er-bismuth/70
+]
+category: turret
+consumes: {
+  power: 1.2
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+shoot: {
+    type: shootSpread
+    shots: 10
+    spread: 2.5
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+}
+recoils: 1
+outlineRadius: 3
+targetAir: true
+targetGround: false
+rotateSpeed: 1
+reload: 45
+range: 180
+inaccuracy: 4
+shootY: 6
+ammoPerShot: 5
+ammoTypes: {
+    er-stanno-bismuth-glass: {
+        type: flakBulletType
+        damage: 16
+        splashDamage: 16
+        splashDamageRadius: 10
+        explodeRange: 15
+        speed: 4.5
+        lifetime: 40
+        velocityScaleRandMin: 0.75
+        velocityScaleRandMax: 1.2
+        height: 12
+        width: 2
+        frontColor: DDDDDDFF
+        backColor: 777777FF
+        hitEffect: [
+            {
+                type: ParticleEffect
+                particles: 5
+                line: true
+                lifetime: 30
+                layer: 100.3
+                cone: 60
+                length: 20
+                interp: pow3Out
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: DDDDDDFF
+                colorTo: 777777FF
+            }
+        ]
+  	  despawnEffect: [
+            {
+                type: ParticleEffect
+                particles: 5
+                line: true
+                lifetime: 30
+                layer: 100.3
+                cone: 60
+                length: 20
+                interp: pow3Out
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: DDDDDDFF
+                colorTo: 777777FF
+            }
+        ]
+        fragBullets: 3
+        fragBullet: {
+            type: flakBulletType
+            damage: 3
+            splashDamage: 3
+            splashDamageRadius: 6
+            explodeRange: 10
+            speed: 2
+            lifetime: 8
+            height: 6
+            width: 1
+            frontColor: DDDDDDFF
+            backColor: 777777FF
+            hitEffect: [
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    line: true
+                    lifetime: 30
+                    layer: 100.3
+                    cone: 60
+                    length: 20
+                    interp: pow3Out
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: DDDDDDFF
+                    colorTo: 777777FF
+                }
+            ]
+           despawnEffect: [
+               {
+                    type: ParticleEffect
+                    particles: 5
+                    line: true
+                    lifetime: 30
+                    layer: 100.3
+                    cone: 60
+                    length: 20
+                    interp: pow3Out
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: DDDDDDFF
+                    colorTo: 777777FF
+                }
+            ]
+        }
+    }
+    er-veylon: {
+        type: flakBulletType
+        damage: 25
+        splashDamage: 25
+        splashDamageRadius: 10
+        explodeRange: 10
+        speed: 4.5
+        lifetime: 40
+        velocityScaleRandMin: 0.75
+        velocityScaleRandMax: 1.2
+        height: 12
+        width: 2
+        frontColor: 2F8099FF
+        backColor: 297493FF
+        hitEffect: [
+            {
+                type: ParticleEffect
+                particles: 5
+                line: true
+                lifetime: 30
+                layer: 100.3
+                cone: 60
+                length: 20
+                interp: pow3Out
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: 2F8099FF
+                colorTo: 297493FF
+            }
+        ]
+  	  despawnEffect: [
+            {
+                type: ParticleEffect
+                particles: 5
+                line: true
+                lifetime: 30
+                layer: 100.3
+                cone: 60
+                length: 20
+                interp: pow3Out
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: 2F8099FF
+                colorTo: 297493FF
+            }
+        ]
+        fragBullets: 3
+        fragBullet: {
+            type: lightningBulletType
+            collidesAir: true
+            damage: 6
+            lightningLength: 4
+            lightningColor: 2F8099FF
+        }
+    }
+    er-dense-alloy: {
+        type: flakBulletType
+        damage: 32
+        splashDamage: 32
+        splashDamageRadius: 13
+        explodeRange: 10
+        speed: 4.5
+        lifetime: 40
+        velocityScaleRandMin: 0.75
+        velocityScaleRandMax: 1.2
+        height: 12
+        width: 2
+        frontColor: 6E6E79FF
+        backColor: 4C4C57FF
+        hitEffect: [
+            {
+                type: ParticleEffect
+                particles: 5
+                line: true
+                lifetime: 30
+                layer: 100.3
+                cone: 60
+                length: 20
+                interp: pow3Out
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: 6E6E79FF
+                colorTo: 4C4C57FF
+            }
+        ]
+  	  despawnEffect: [
+            {
+                type: ParticleEffect
+                particles: 5
+                line: true
+                lifetime: 30
+                layer: 100.3
+                cone: 60
+                length: 20
+                interp: pow3Out
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: 6E6E79FF
+                colorTo: 4C4C57FF
+            }
+        ]
+        fragBullets: 3
+        fragRandomSpread: 0
+        fragSpread: 120
+        fragBullet: {
+            type: ShrapnelBulletType
+            collidesAir: true
+            length: 12
+            width: 10
+            serrations: 0
+            damage: 16
+            fromColor: 6E6E79FF
+            toColor: 4C4C57FF
+        }
+    }
+}

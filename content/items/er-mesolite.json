@@ -1,0 +1,8 @@
+type: Item
+name: "[#C79E2C]Mesolite[]"
+flammability: 0.3
+explosiveness: 0.2
+radioactivity: 2.5
+charge: 0.4
+hardness: 20
+color: C79E2CFF

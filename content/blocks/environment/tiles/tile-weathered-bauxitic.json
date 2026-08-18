@@ -1,0 +1,7 @@
+type: Floor
+name: Weathered bauxitic floor
+description: A floor that contains gallium.
+variants: 4
+attributes: {
+  gallium: 0.1111111111111111111
+}

@@ -1,0 +1,189 @@
+name: Epsilon
+description: Protector of the Astra core.
+type: flying
+flying: true
+faceTarget: true
+health: 340
+armor: 3
+speed: 3.5
+engineSize: 0
+accel: 0.4
+drag: 0.2
+lowAltitude: true
+groundLayer: 40
+shadowElevation: 0.1
+rotateSpeed: 5.4
+itemCapacity: 55
+hitSize: 15
+fogRadius: 0
+mineWalls: true
+mineSpeed: 9
+mineTier: 3
+buildSpeed: 1.5
+engines: []
+weapons: [
+{
+    x: 0.1
+    y: 3
+    name: epsilon-weapon
+    reload: 30
+    top: false
+    rotate: false
+    mirror: false
+    shootSound: shoot
+    recoil: 0
+    warmupMaintainTime: 90
+    alternate: false
+    shoot: {
+    firstShotDelay: 60
+    }
+    shootX: 5.6
+    parts: [
+      {
+        type: RegionPart
+        suffix: -turret
+        mirror: false
+        layer: 39
+        progress: warmup
+        moveX: 5.7
+      }
+   ]
+    bullet: {
+      type: MissileBulletType
+      speed: 4.2
+      lifetime: 18
+      damage: 14
+      hitSize: 6
+      homingPower: 0.18
+      weaveScale: 4
+      weaveMag: 1
+      trailColor: FFA76EFF
+      trailEffect: [
+        {
+          type: ParticleEffect
+          particles: 2
+          lifetime: 30
+          layer: 100.2
+          cone: 360
+          length: 10
+          interp: pow3Out
+          sizeFrom: 1.4
+          sizeTo: 0
+          colorFrom: FFA76EDD
+          colorTo: FFA76E00
+        }
+      ]
+      trailWidth: 1.5
+      trailLength: 16
+      hitEffect: explosion
+      despawnEffect: explosion
+      smokeEffect: none
+    }
+ }
+ {
+    x: -0.1
+    y: 3
+    name: epsilon-weapon
+    reload: 30
+    top: false
+    rotate: false
+    mirror: false
+    shootSound: shoot
+    recoil: 0
+    warmupMaintainTime: 90
+    alternate: false
+    shoot: {
+    firstShotDelay: 75
+    }
+    shootX: -5.6
+    parts: [
+      {
+        type: RegionPart
+        suffix: -turret2
+        mirror: false
+        layer: 39
+        progress: warmup
+        moveX: -5.7
+      }
+   ]
+    bullet: {
+      type: MissileBulletType
+      speed: 4.2
+      lifetime: 18
+      damage: 14
+      hitSize: 6
+      homingPower: 0.18
+      weaveScale: 4
+      weaveMag: 1
+      trailColor: FFA76EFF
+      trailEffect: [
+        {
+          type: ParticleEffect
+          particles: 2
+          lifetime: 30
+          layer: 100.2
+          cone: 360
+          length: 10
+          interp: pow3Out
+          sizeFrom: 1.4
+          sizeTo: 0
+          colorFrom: FFA76EDD
+          colorTo: FFA76E00
+        }
+      ]
+      trailWidth: 1.5
+      trailLength: 16
+      hitEffect: explosion
+      despawnEffect: explosion
+      smokeEffect: none
+    }
+ }
+]
+abilities: [
+    {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 15
+    x: 8.3
+    y: -5.3
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+        type: ParticleEffect
+        followParent: true
+        rotWithParent: true
+        particles: 1
+        lifetime: 20
+        length: 0
+        region: erythros-epsilon-rotor
+        sizeFrom: 8
+        sizeTo: 8
+        spin: 24
+        layer: 97
+        }
+    }
+    {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 15
+    x: -8.3
+    y: -5.3
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+        type: ParticleEffect
+        followParent: true
+        rotWithParent: true
+        particles: 1
+        lifetime: 20
+        length: 0
+        region: erythros-epsilon-rotor
+        sizeFrom: 8
+        sizeTo: 8
+        spin: -24
+        layer: 97
+        }
+    }
+]

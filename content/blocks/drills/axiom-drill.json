@@ -1,0 +1,28 @@
+type: Drill
+name: Axiom Drill
+description: desc
+size: 5
+squareSprite: false
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 50
+liquidCapacity: 45
+health: 1960
+drawRim: true
+tier: 6
+drillTime: 80
+liquidBoostIntensity: 1.8
+warmupSpeed: 0.0015
+rotateSpeed: 6
+consumes: {
+    power: 7.8
+    liquid: er-sulfhexide/0.125
+}
+category: production
+requirements: [
+    er-tin/150
+    er-bismuth/120
+    er-dense-alloy/30
+    er-erythium/40
+]

@@ -1,0 +1,70 @@
+type: PowerTurret
+name: Jaw
+description: A plant
+consumes: {}
+reload: 90
+health: 3260
+size: 2
+rotateSpeed: 3.6
+moveWhileCharging: false
+reloadWhileCharging: false
+targetInterval: 90
+shoot: {
+  firstShotDelay: 30
+  shots: 1
+}
+category: turret
+drawer: {
+  type: DrawTurret
+  basePrefix: plant-
+  parts: [
+      {
+        type: RegionPart
+        suffix: -bot
+        mirror: false
+        under: false
+        y: -3
+      }
+      {
+        type: RegionPart
+        suffix: -left
+        mirror: false
+        under: false
+        progress: warmup
+        rotation: -35
+        moveRot: -55
+        x: -3
+        y: -3
+      }
+      {
+        type: RegionPart
+        suffix: -right
+        mirror: false
+        under: false
+        progress: warmup
+        rotation: 35
+        moveRot: 55
+        x: 3
+        y: -3
+      }
+   ]
+}
+recoil: 0
+inaccuracy: 0
+outlineRadius: 2
+range: 21
+shootY: 2
+shootType: {
+    type: BasicBulletType
+    speed: 3
+    lifetime: 7
+    damage: 412
+    frontColor: 00000000
+    backColor: 00000000
+    shootEffect: none
+    smokeEffect: none
+}  
+outlineColor: 206633
+squareSprite: false
+drawTeamOverlay: false
+requirements:[copper/1]

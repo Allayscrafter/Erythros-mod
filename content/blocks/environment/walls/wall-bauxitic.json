@@ -1,0 +1,5 @@
+type: StaticWall
+name: Bauxitic Wall
+attributes: {
+  alumina: 0.25
+}

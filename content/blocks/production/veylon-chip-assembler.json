@@ -1,0 +1,54 @@
+type: GenericCrafter
+name: Veylon chip assembler
+description: make better chip
+size: 3
+health: 60
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  er-veylon-chip/1
+]
+consumes: {
+power: 0.66666666666666666666
+  items: [
+    er-basic-chip/1,
+    er-veylon/2
+    ]
+  liquid: er-hf-acid/0.2
+}
+craftTime: 120
+category: crafting
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-hf-acid
+      padding: 2
+      alpha: 0.5
+    }
+    {
+      type: DrawBubbles
+      fill: false
+      color: 1E6988
+    }
+    {
+    type: DrawCrucibleFlame
+    alpha: 0.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+ambientSound: loopCircuit
+ambientSoundVolume: 0.25

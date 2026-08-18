@@ -1,0 +1,53 @@
+type: PowerTurret
+name: Beam mender
+description: Repairs nearby buildings with a focused regenerative laser beam.
+size: 2
+range: 64
+health: 420
+reload: 15
+shootSound: lasershoot
+targetHealing: true
+targetGround: false
+targetAir: false
+playerControllable: false
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+requirements: [
+er-tin/60
+er-bismuth/35
+]
+drawer: {
+type: DrawTurret
+basePrefix: mender-
+}
+shootY: 0
+consumes: {
+  power: 1.5
+}
+shootType: {
+  type: PointLaserBulletType
+  shootEffect: [
+  {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 20
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: 00ff00CC
+    colorTo: 00ff0000
+  }
+  ]
+collidesTeam: true
+healPercent: 1
+range: 80
+color: 99FFCCDD
+}
+category: effect

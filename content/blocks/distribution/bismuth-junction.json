@@ -1,0 +1,17 @@
+type: Junction
+name: Bismuth junction
+description: Allows for crossing of two ducts
+health: 60
+size: 1
+speed: 20
+requirements: [
+  er-bismuth/2
+]
+squareSprite: true
+category: distribution
+research: {
+  parent: bismuth-duct
+  }
+researchCost: [
+  er-bismuth/40
+  ]

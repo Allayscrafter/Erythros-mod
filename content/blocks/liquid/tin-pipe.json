@@ -1,0 +1,18 @@
+type: Conduit
+name: Tin pipe
+description: liquid go forward
+category: liquid
+requirements: [
+  er-tin/2
+]
+health: 30
+leaks: true
+underBullets: true
+junctionReplacement: fluid-junction
+rotBridgeReplacement: fluid-bridge
+research: {
+  parent: er-core-astra
+  }
+researchCost: [
+  er-tin/25
+  ]

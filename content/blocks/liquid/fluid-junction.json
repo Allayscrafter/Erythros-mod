@@ -1,0 +1,15 @@
+type: LiquidJunction
+name: Fluid junction
+description: junction
+solid: false
+category: liquid
+squareSprite: true
+requirements: [
+  er-tin/6
+]
+research: {
+  parent: fluid-router
+  }
+researchCost: [
+  er-tin/30
+  ]

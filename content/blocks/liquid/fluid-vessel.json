@@ -1,0 +1,12 @@
+type: LiquidRouter
+name: Fluid vessel
+description: Stores a small amount of liquid or gas.
+size: 2
+hasLiquids: true
+squareSprite: false
+liquidCapacity: 425
+category: liquid
+requirements: [
+  er-tin/60
+]
+liquidPadding: 2

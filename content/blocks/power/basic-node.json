@@ -1,0 +1,28 @@
+type: BeamNode
+name: Basic power node
+description: power
+health: 20
+fogRadius: 3
+range: 9
+size: 1
+squareSprite: false
+category: power
+hasPower: true
+conductivePower: true
+consumesPower: true
+outputsPower: true
+consumes: {
+	powerBuffered: 500
+} 
+requirements: [
+  er-tin/5
+  er-bismuth/8
+]
+laserColor1: 00C8FFFF
+laserColor2: 0076A9FF
+research: {
+  parent: solar-panel
+  }
+researchCost: [
+  er-tin/20, er-bismuth/20
+  ]

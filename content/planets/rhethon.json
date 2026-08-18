@@ -1,0 +1,35 @@
+localizedName: Rhethon
+mesh: [
+{
+  type: SunMesh
+  divisions: 5
+  octaves: 1
+  persistence: 0.5
+  scl: 2.2
+  pow: 1
+  mag: 1
+  colorScale: 1.25
+  colors: [
+    B84A00, 
+    D96400, 
+    F07F00, 
+    E67200, 
+    C85600
+  ]
+}
+]
+radius: 3
+accessible: true
+visible: true
+hasAtmosphere: false
+bloom: true
+orbitSpacing: 10
+solarSystem: 000-barycentre
+parent: 000-barycentre
+orbitRadius: 20
+orbitOffset: 180
+drawOrbit: false
+tidalLock: true
+lightColor: F17F22
+iconColor: BBBBBBFF
+icon: commandRally

@@ -1,0 +1,10 @@
+type: Wall
+name: Niobium wheel
+description: Used in tank unit production. 
+size: 2
+customShadow: true
+placeablePlayer: false
+requirements: [
+  er-bismuth/20
+  er-niobium/15
+]

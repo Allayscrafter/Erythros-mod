@@ -1,0 +1,43 @@
+type: TallBlock
+name: Large Bush
+solid: false
+buildTime: 60
+requirements: [ er-plantmatter/10 ]
+breakable: true
+breakEffect: [
+{
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 22BB44DD
+    colorTo: 22BB4400
+  }
+]
+destroyEffect: [
+{
+    type: ParticleEffect
+    particles: 10
+    lifetime: 30
+    layer: 100.2
+    cone: 360
+    length: 10
+    interp: pow3Out
+    sizeFrom: 1.4
+    sizeTo: 0
+    colorFrom: 22BB44DD
+    colorTo: 22BB4400
+  }
+]
+shadowLayer: 33
+layer: 34
+variants: 2
+crushFragile: true
+shadowOffset: -1.25
+customShadow: true
+category: effect

@@ -1,0 +1,415 @@
+name: Aftershock
+description: Shoots different explosive shells based on ammo provided.
+type: ItemTurret
+size: 4
+squareSprite: false
+health: 4560
+shootSound: shootDuo
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/40
+  er-bismuth/35
+]
+category: turret
+consumes: {
+  power: 10
+  liquid: er-sulfhexide/0.25
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+}
+outlineRadius: 3
+targetAir: false
+targetGround: true
+rotateSpeed: 2
+reload: 300
+range: 320
+shootY: 6
+smokeEffect: shootSmokeMissile
+ammoPerShot: 3
+ammoTypes: {
+  er-veylon: {
+    type: ArtilleryBulletType
+    splashDamage: 220
+	splashDamageRadius: 48
+	splashDamagePierce: true
+	lifetime: 80
+	speed: 4
+	hitEffect: none
+	height: 16
+	width: 8
+	frontColor: 2F8099FF
+    backColor: 297493FF
+	collidesTeam: false
+	despawnEffect: none
+	shootEffect: [
+	  {
+	    type: SoundEffect
+	    sound: explosionReactorNeoplasm
+	    maxVolume: 0.5
+    	minVolume: 0.4
+        effect: [
+          {
+            type: SoundEffect
+            sound: shieldBreak
+            startDelay: 10
+            effect: [
+              {
+                type: SoundEffect
+                sound: drillImpact
+                maxVolume: 1
+                startDelay: 5
+                effect: [shootTitan, shootSmokeTitan]
+              }
+            ]
+          }
+        ]
+  	}
+	]
+	trailColor: 2F8099FF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 12
+    trailWidth: 2
+    trailEffect: [
+      {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 30
+      layer: 100.1
+      cone: 5
+      length: 20
+      interp: pow3Out
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: 2F8099FF
+      colorTo: 2F809900
+      }
+    ]
+    fragBullets: 1
+    fragBullet: {
+       type: ExplosionBulletType
+   	shootEffect: none
+   	splashDamage: 168
+   	splashDamageRadius: 64
+       splashDamagePierce: true
+       killShooter: false
+   	impact: true
+       incendChance: 1
+       incendAmount: 4
+       incendSpread: 2.3
+       hitEffect: none
+       despawnEffect: [
+       {
+              type: SoundEffect
+              sound: explosionPlasmaSmall
+              effect: [
+                {
+                type: SoundEffect
+                sound: explosion titan
+                effect: [
+                {
+                    type: ExplosionEffect
+                    lifetime: 90
+                    waveRadBase: 0
+                    waveRad: 80
+                    waveLife: 90
+                    waveColor: 2F8099FF
+                    smokeColor: 2F8099FF
+                    sparkColor: 2F8099
+                    smokes: 4
+                    followParent: true
+                   }
+                   {
+                     type: ParticleEffect
+                     particles: 15
+                     lifetime: 30
+                     layer: 100.1
+                     cone: 360
+                     length: 64
+                     interp: pow3Out
+                     sizeFrom: 24
+                     sizeTo: 0
+                     colorFrom: 2F8099FF
+                     colorTo: 2F8099FF
+                    }         
+                  ]
+                }
+              ]
+            }
+      ]
+      fragBullets: 10
+      fragRandomSpread: 0
+      fragSpread: 36
+      fragBullet: {
+        type: ArtilleryBulletType
+        speed: 3
+        lifetime: 11
+        splashDamage: 65
+    	splashDamageRadius: 32
+        frontColor: 2F8099FF
+        backColor: 297493FF
+        incendChance: 1
+        incendAmount: 3
+        incendSpread: 2.3
+        fragBullets: 8
+        fragRandomSpread: 0
+        fragSpread: 45
+        fragBullet: {
+          type: ArtilleryBulletType
+          speed: 3
+          lifetime: 11
+          splashDamage: 65
+      	splashDamageRadius: 32
+          frontColor: 2F8099FF
+          backColor: 297493FF
+          incendChance: 1
+          incendAmount: 2
+          incendSpread: 2.3
+        }
+      }
+    }
+  }//.     END OF VEYLON
+  er-mesolite: {
+    type: ArtilleryBulletType
+    splashDamage: 462
+	splashDamageRadius: 48
+	splashDamagePierce: true
+	lifetime: 80
+	speed: 4
+	hitEffect: none
+	height: 16
+	width: 8
+	collidesTeam: false
+	despawnEffect: none
+	hitSound: none
+	despawnSound: none
+	shootEffect: [
+	  {
+	    type: SoundEffect
+	    sound: explosionReactorNeoplasm
+	    maxVolume: 0.6
+    	minVolume: 0.5
+        effect: [
+          {
+            type: SoundEffect
+            sound: shieldBreak
+            startDelay: 10
+            effect: [
+              {
+                type: SoundEffect
+                sound: drillImpact
+                maxVolume: 1.3
+                startDelay: 5
+                effect: [shootTitan, shootSmokeTitan]
+              }
+            ]
+          }
+        ]
+  	}
+	]
+	trailColor: E6C15AFF
+    trailInterval: 4
+    trailRotation: true
+    trailLength: 12
+    trailWidth: 2
+    trailEffect: [
+      {
+        type: ParticleEffect
+        particles: 1
+        lifetime: 30
+        layer: 100.1
+        cone: 5
+        length: 20
+        interp: pow3Out
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: E6C15AFF
+        colorTo: E6C15A00
+      }
+    ]
+    fragBullets: 1
+    fragBullet: {
+       type: ExplosionBulletType
+   	shootEffect: none
+   	splashDamage: 168
+   	splashDamageRadius: 64
+       splashDamagePierce: true
+       status: slow
+       statusDuration: 120
+       killShooter: false
+   	impact: true
+       hitSound: explosionPlasmaSmall
+   	despawnSound: explosionPlasmaSmall
+       hitEffect: none
+       despawnEffect: [
+     {
+       type: WaveEffect
+       sizeFrom: 64
+       sizeTo: 0
+       strokeTo: 10
+       lifetime: 60
+       colorFrom: E6C15AFF
+       colorTo: E6C15A00
+       followParent: true
+      }
+      {
+       type: WaveEffect
+       sizeFrom: 64
+       sizeTo: 0
+       strokeTo: 10
+       lifetime: 30
+       colorFrom: E6C15AFF
+       colorTo: E6C15A00
+       followParent: true
+      }
+      {
+       type: ParticleEffect
+       particles: 20
+       lifetime: 30
+       layer: 100.1
+       cone: 360
+       length: 64
+       baseLength: -64
+       interp: pow3Out
+       sizeFrom: 24
+       sizeTo: 0
+       colorFrom: E6C15AFF
+       colorTo: E6C15A00
+       }
+       {
+       type: ParticleEffect
+       particles: 25
+       lifetime: 60
+       layer: 100.1
+       cone: 360
+       length: 64
+       baseLength: -64
+       interp: pow4Out
+       sizeFrom: 16
+       sizeTo: 0
+       colorFrom: E6C15AFF
+       colorTo: E6C15A00
+       }
+       {
+       type: SoundEffect
+       sound: chargeLancer
+       minVolume: 0.35
+       maxVolume: 0.45
+       effect: [
+           {
+           type: SoundEffect
+           sound: chargeLancer
+           minVolume: 0.35
+           maxVolume: 0.45
+           startDelay: 25
+           effect: none
+           }
+         ]
+       }
+      ]
+      fragBullets: 1
+      fragBullet: {
+        type: BasicBulletType
+        speed: 0
+        lifetime: 60
+        damage: 0
+        collides: false
+        frontColor: 00000000
+        backColor: 00000000
+        fragBullets: 1
+        fragBullet: {
+          type: ExplosionBulletType
+      	shootEffect: none
+      	splashDamage: 768
+      	splashDamageRadius: 64
+      	knockback: 15
+          killShooter: false
+      	impact: true
+          hitEffect: none
+          status: slow
+          statusDuration: 120
+          despawnEffect: [
+            {
+              type: SoundEffect
+              sound: explosionPlasmaSmall
+              effect: [
+                {
+                type: SoundEffect
+                sound: explosion titan
+                effect: [
+                  {
+                    type: ExplosionEffect
+                    lifetime: 90
+                    waveRadBase: 0
+                    waveRad: 80
+                    waveLife: 90
+                    waveColor: E6C15AFF
+                    smokeColor: E6C15AAA
+                    sparkColor: E6C15A
+                    smokes: 4
+                    followParent: true
+                   }
+                   {
+                     type: ParticleEffect
+                     particles: 20
+                     lifetime: 30
+                     layer: 100.1
+                     cone: 360
+                     length: 64
+                     interp: pow3Out
+                     sizeFrom: 24
+                     sizeTo: 0
+                     colorFrom: E6C15AFF
+                     colorTo: E6C15A00
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          fragBullets: 8
+          fragRandomSpread: 0
+          fragSpread: 45
+          fragBullet: {
+            type: ArtilleryBulletType
+            speed: 3
+            lifetime: 11
+            height: 6
+            width: 4
+            splashDamage: 125
+        	splashDamageRadius: 32
+            frontColor: E6C15AFF
+            backColor: B39027FF
+            fragBullets: 8
+            fragRandomSpread: 0
+            fragSpread: 45
+            fragBullet: {
+              type: ArtilleryBulletType
+              speed: 3
+              lifetime: 8
+              height: 3
+              width: 2
+              splashDamage: 50
+          	splashDamageRadius: 20
+              frontColor: E6C15AFF
+              backColor: B39027FF
+              incendChance: 1
+              incendAmount: 9
+              incendSpread: 2.3
+            }
+          }
+        }
+      }
+    }
+  }
+}

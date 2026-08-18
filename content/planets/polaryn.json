@@ -1,0 +1,35 @@
+localizedName: Polaryn
+mesh: [
+{
+  type: SunMesh
+  divisions: 5
+  octaves: 1
+  persistence: 0.5
+  scl: 2.2
+  pow: 1
+  mag: 1
+  colorScale: 1.25
+  colors: [
+    5E7FC3, 
+    6F9FED, 
+    95D6FF, 
+    6FA6E6, 
+    5F7FC3
+  ]
+}
+]
+radius: 7
+accessible: true
+visible: true
+hasAtmosphere: false
+bloom: true
+orbitSpacing: 10
+solarSystem: 000-barycentre
+parent: 000-barycentre
+orbitRadius: 10
+orbitOffset: 0
+drawOrbit: false
+tidalLock: true
+lightColor: AFE7FF
+iconColor: BBBBBBFF
+icon: commandRally

@@ -1,0 +1,9 @@
+name: Acidic Vent
+type: SteamVent
+blendGroup: tile-acidic-soil
+parent: tile-bauxitic
+effect: ventSteam
+effectColor: B5E61DF0
+attributes: {
+   acid: 1
+}

@@ -1,0 +1,107 @@
+name: Torrent
+description: shoot liquids
+type: LiquidTurret
+health: 950
+size: 2
+reload: 30
+range: 75
+liquidCapacity: 30
+shootEffect: shootLiquid
+shootSound: loopAtrax
+smokeEffect: none
+shootCone: 30
+hasLiquids: true
+inaccuracy: 20
+velocityRnd: 0.5
+outlineRadius: 3
+consumes: {
+power: 0.25
+}
+shoot: {
+    shots: 8
+    shotDelay: 1
+}
+ammoPerShot: 10
+ammoTypes: {
+    er-gallium: {
+    type: liquidBulletType
+	liquid: er-gallium
+	shootEffect: shootLiquid
+	lifetime: 25
+	damage: 5
+	speed: 3
+	knockback: 0.1
+	puddleSize: 40
+    }
+    er-magma: {
+    type: liquidBulletType
+	liquid: er-magma
+	shootEffect: shootLiquid
+	lifetime: 25
+	damage: 9
+	speed: 3
+	knockback: 1
+	puddleSize: 40
+    }
+    er-hf-acid: {
+    type: liquidBulletType
+	liquid: er-hf-acid
+	shootEffect: shootLiquid
+	lifetime: 25
+	damage: 13
+	speed: 3
+	knockback: 0.3
+	puddleSize: 40
+    }
+    er-pure-water: {
+    type: liquidBulletType
+	liquid: er-pure-water
+	shootEffect: shootLiquid
+	lifetime: 25
+	damage: 2
+	speed: 3
+	knockback: 2
+	puddleSize: 40
+    }
+    er-sulphroil: {
+    type: liquidBulletType
+	liquid: er-sulphroil
+	shootEffect: shootLiquid
+	lifetime: 25
+	damage: 6
+	speed: 3
+	knockback: 1
+	puddleSize: 40
+    }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+    parts: [
+      {
+        type: RegionPart
+        suffix: -barrel-left
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: 3
+        moveX: 3
+      }    
+      {
+        type: RegionPart
+        suffix: -barrel-right
+        mirror: false
+        under: true
+        progress: recoil
+        moveY: 3
+        moveX: -3
+      }  
+   ]
+}
+requirements: [
+  er-tin/80
+  er-bismuth/60
+  er-ferrous-alumina/100
+]
+buildCostMultiplier: 1
+category: turret

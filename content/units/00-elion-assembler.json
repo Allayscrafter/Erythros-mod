@@ -1,0 +1,22 @@
+type: tether
+name: Assembler drone
+description: Constructs units from Assemblers.
+flying: true
+drag: 0.005
+accel: 0.2
+speed: 1
+health: 100
+engineSize: 2
+engineOffset: 6
+payloadCapacity: 0
+targetable: false
+bounded: false
+outlineRadius: 2
+isEnemy: false
+hidden: true
+useUnitCap: false
+logicControllable: false
+playerControllable: false
+allowedInPayloads: false
+createWreck: false
+controller: AssemblerAI

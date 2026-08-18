@@ -1,0 +1,38 @@
+type: WallCrafter
+name: Bauxite compactor
+description: Mines bauxite from walls and compresses it with slag to produce Ferrous Alumina.
+size: 3
+category: production
+health: 120
+requirements: [
+  er-tin/50
+  er-bismuth/35
+]
+drillTime: 180
+consumes: {
+  liquids: [
+  {
+    liquid: er-magma
+    amount: 0.05
+  }
+  ]
+}
+output: er-ferrous-alumina
+attribute: alumina
+baseEfficiency: 0
+minEfficiency: 0.5
+liquidBoostIntensity: 10
+displayEfficiency: true
+hasItems: true
+hasLiquids: true
+liquidCapacity: 50
+ambientSound: drill
+ambientSoundVolume: 0.15
+squareSprite: false
+research: {
+  parent: pulse-drill
+  }
+researchCost: [
+  er-tin/250, er-bismuth/150
+  ]
+hasLiquidBooster: true

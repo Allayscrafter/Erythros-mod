@@ -1,0 +1,31 @@
+type: Reconstructor
+size: 3
+health: 600
+configurable: false
+name: Unit reconstructor - Air
+description: Upgrades tier 1 air units into their tier 2 counterpart. 
+squareSprite: false
+hasPower: true
+hasItems: true
+hasLiquids: true
+requirements: [
+  er-tin/300
+  er-stanno-bismuth-glass/70
+  er-ferrous-alumina/50
+  er-basic-chip/40
+]
+constructTime: 2400
+category: units
+upgrades: [
+    [bee, wasp]
+]
+consumes: {
+  power: 3
+  liquids: [
+	er-gallium/0.1
+  ]
+  items: [
+      er-basic-chip/30
+      er-stanno-bismuth-glass/40
+  ]
+}

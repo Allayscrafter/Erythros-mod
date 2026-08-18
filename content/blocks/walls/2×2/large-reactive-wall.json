@@ -1,0 +1,25 @@
+type: wall
+name: Large reactive wall
+description: Larger version of reactive wall. released sparks are stronger than its smaller version.
+size: 2
+armor: 5
+health: 2020
+squareSprite: true
+category: defense
+lightningChance: 0.25
+lightningDamage: 15
+lightningLength: 10
+lightningColor: FFFF22FF
+destroyBullet: {
+  instantDisappear: true
+  damage: 0
+  speed: 0
+  fragBullets: 20
+  fragBullet: {
+    type: LightningBulletType
+    damage: 24
+    lightningColor: 007700
+  }
+}
+
+requirements: [er-tin/40 , er-basic-chip/32]

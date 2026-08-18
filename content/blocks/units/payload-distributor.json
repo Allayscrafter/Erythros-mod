@@ -1,0 +1,9 @@
+type: PayloadRouter
+name: Payload distributor
+description: Distributes inputted payload to up to three output directions.
+category: units
+requirements: [
+  er-tin/20
+  er-bismuth/15
+]
+canOverdrive: false

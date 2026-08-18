@@ -1,0 +1,67 @@
+type: HeatCrafter
+heatRequirement: 2
+name: Xylogen encoder
+description: Uses basic semiconductor chips, water, heat and power to create Xylogen.
+size: 2
+craftTime: 60
+minEfficiency: 1
+maxEfficiency: 2
+hasLiquids: true
+hasItems: true
+hasPower: true
+consumes: {
+    power: 1
+    liquids: [
+      er-pure-water/0.33333333333333333
+	]
+	items: [
+	  er-basic-chip/2
+	]
+}
+outputLiquids: [
+	er-xylogen/0.5833333333333
+]
+ambientSound: extractLoop
+ambientSoundVolume: 0.09
+category: crafting
+liquidCapacity: 50
+requirements: [
+	er-tin/65
+	er-bismuth/32
+	er-stanno-bismuth-glass/25
+	er-basic-chip/30
+	er-ferrous-alumina/28
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-pure-water
+      padding: 1
+      alpha: 0.75
+    }
+    {
+      type: DrawBubbles
+      fill: false
+      color: 318040
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-xylogen
+      padding: 1
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawHeatInput
+      suffix: -heat
+    } 
+  ]
+}

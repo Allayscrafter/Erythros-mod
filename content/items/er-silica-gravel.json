@@ -1,0 +1,14 @@
+type: Item
+name: Silica gravel
+flammability: 0
+explosiveness: 0
+radioactivity: 0.02
+charge: 0
+hardness: 1
+color: D4C28C
+research: {
+  parent: er-bismuth
+  objectives: [
+    er-silica-gravel
+    ]
+  }

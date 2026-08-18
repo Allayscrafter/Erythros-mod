@@ -1,0 +1,28 @@
+type: BurstDrill
+name: Pulse Drill
+description: Mines ores or ground below using charged pulses.
+size: 3
+category: production
+health: 95
+requirements: [
+  er-tin/45
+  er-bismuth/25
+]
+consumes: {
+  power: 1
+}
+hasPower: true
+drillTime: 480
+tier: 2
+shake: 2
+itemCapacity: 35
+arrows: 1
+arrowColor: 00C8FF
+glowColor: 00C8FF
+squareSprite: false
+research: {
+  parent: er-core-astra
+  }
+researchCost: [
+  er-tin/45, er-bismuth/25
+  ]

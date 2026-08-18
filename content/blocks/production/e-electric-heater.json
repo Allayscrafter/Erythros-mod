@@ -1,0 +1,34 @@
+type: HeatProducer
+name: Electric heater
+description: Generates heat using electricity.
+size: 2
+hasLiquids: false
+hasPower: true
+hasItems: false
+heatOutput: 4
+craftTime:60
+squareSprite: false
+ambientSound: loopSmelter
+ambientSoundVolume: 0.2
+category: crafting
+requirements: [
+	er-tin/55
+	er-bismuth/30
+	er-ferrous-alumina/50
+	er-niobium/45
+]
+consumes: {
+	power: 1.916666666666666666666666666
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}

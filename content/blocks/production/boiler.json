@@ -1,0 +1,64 @@
+type: HeatCrafter
+heatRequirement: 4
+name: Water boiler
+description: Boils water to produce steam.
+size: 2
+craftTime: 60
+minEfficiency: 1
+maxEfficiency: 3
+hasLiquids: true
+hasItems: false
+hasPower: true
+consumes: {
+power: 0.25
+liquids: [
+    er-pure-water/0.1666666666666
+	]
+}
+outputLiquids: [
+	er-steam/0.41666666666666
+]
+ambientSound: extractLoop
+ambientSoundVolume: 0.09
+category: crafting
+liquidCapacity: 60
+
+requirements: [
+	er-tin/75
+	er-bismuth/25
+	er-stanno-bismuth-glass/25
+	er-ferrous-alumina/50
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-pure-water
+      padLeft: 1.1
+      padTop: 1.1
+      padBottom: 1.1
+      padRight: 1.1
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: er-steam
+      padLeft: 6.5
+      padTop: 6.5
+      padBottom: 6.5
+      padRight: 6.5
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawHeatInput
+      suffix: -heat
+    } 
+  ]
+}

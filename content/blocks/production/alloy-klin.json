@@ -1,0 +1,48 @@
+type: GenericCrafter
+name: Alloy klin
+description: Alloys tin and bismuth and smelts it with silica gravel to create stannobismuth glass.
+size: 2
+health: 60
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  er-stanno-bismuth-glass/3
+]
+consumes: {
+power: 0.3333333333333333333
+  items: [
+    er-tin/1
+    er-bismuth/1
+    er-silica-gravel/1
+    ]
+}
+craftTime: 120
+category: crafting
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+    type: DrawArcSmelt
+    }
+  ]
+}
+ambientSound: grinding
+ambientSoundVolume: 0.08

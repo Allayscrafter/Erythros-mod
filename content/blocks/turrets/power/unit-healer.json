@@ -1,0 +1,18 @@
+type: RepairTower
+name: Xylogen healer
+description: heal
+size: 2
+range: 80
+healAmount: 0.3
+hasLiquids: true
+consumes: {
+  power: 1.5
+  liquids: [ er-xylogen/0.25 ]
+}
+squareSprite: false
+category: units
+requirements: [
+  er-tin/50
+  er-bismuth/25
+]
+researchCostMultiplier: 2

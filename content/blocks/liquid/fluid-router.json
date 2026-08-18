@@ -1,0 +1,17 @@
+type: LiquidRouter
+name: Fluid router
+description: router
+size: 1
+hasLiquids: true
+liquidCapacity: 25
+category: liquid
+requirements: [
+  er-tin/3
+]
+liquidPadding: 2
+research: {
+  parent: tin-pipe
+  }
+researchCost: [
+  er-tin/30
+  ]

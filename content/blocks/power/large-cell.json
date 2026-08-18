@@ -1,0 +1,14 @@
+type: Battery
+name: Large Cell
+description: battery
+health: 350
+size: 3
+category: power
+squareSprite: false
+consumes: {
+  powerBuffered: 16250
+}
+requirements: [
+  er-tin/350
+  er-bismuth/400
+]

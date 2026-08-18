@@ -1,0 +1,7 @@
+type: TreeBlock
+name: Tree
+shadowOffset: -2
+shadowAlpha: 0.5
+attributes: {
+  plantmatter: 1
+}

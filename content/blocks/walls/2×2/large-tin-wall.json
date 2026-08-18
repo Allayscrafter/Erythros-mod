@@ -1,0 +1,17 @@
+type: wall
+name: Large tin wall
+description: A larger version of tin wall.
+size: 2
+armor: 5
+health: 1280
+squareSprite: true
+category: defense
+conductivePower: true
+hasPower: true
+requirements: [er-tin/24]
+research: {
+  parent: tin-wall
+  }
+researchCost: [
+  er-tin/300
+  ]

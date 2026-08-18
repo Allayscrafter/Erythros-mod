@@ -1,0 +1,20 @@
+name: Molten
+damage: 0.3
+effect: {
+  type: ParticleEffect
+  particles: 10
+  sizeFrom: 0.7
+  sizeTo: 0
+  colorFrom: ffcc00ee
+  colorTo: ffaa0000
+  length: 15
+  lifetime: 40
+  cone: 360
+  interp: pow3Out
+  sizeInterp: pow2Out
+  line: false
+}
+affinities: [tarred],
+        opposites: [wet]
+speedMultiplier: 0.9
+healthMultiplier: 0.75

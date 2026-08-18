@@ -1,0 +1,13 @@
+type: Floor
+name: Surface irradiated water
+speedMultiplier: 0.6
+variants: 4
+status: wet
+statusDuration: 180
+liquidDrop: er-irradiated-water
+isLiquid: true
+cacheLayer: water
+albedo: 0.9
+supportsOverlay: true
+shallow: true
+liquidMultiplier: 1.25

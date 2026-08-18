@@ -1,0 +1,236 @@
+name: Disruptor
+description: Heavily disrupts enemy force shields, weak against normal armored units.
+type: ItemTurret
+size: 3
+squareSprite: false
+health: 3600
+shootSound: shootDuo
+hasItems: true
+hasPower: true
+hasLiquids: true
+requirements: [
+  er-tin/40
+  er-bismuth/35
+]
+category: turret
+consumes: {
+  power: 15
+  liquid: er-sulfhexide/0.166666666666666666
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+shoot: {
+  firstShotDelay: 40
+  }
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      mirror: false
+      under: false
+      moveY: -3
+      progress: recoil
+    }
+  ]
+}
+heatProgress: warmup
+heatColor: 4FC3F7
+outlineRadius: 3
+targetAir: true
+targetGround: true
+rotateSpeed: 2
+reload: 240
+range: 312
+shootY: 6.5
+ammoPerShot: 4
+ammoTypes: {
+  er-dense-alloy:{
+    type: LaserBoltBulletType
+    damage: 195
+    shieldDamageMultiplier: 8
+    width: 4
+    height: 9
+    speed: 8
+    lifetime: 39
+    frontColor: 6E6E79FF
+    backColor: 4C4C57FF
+    chargeEffect: [lightningCharge, lancerLaserCharge, lancerLaserChargeBegin]
+    chargeSound: lancerCharge
+    smokeEffect: [
+      {
+      type: ParticleEffect
+      particles: 28
+      lifetime: 90
+      layer: 100.3
+      cone: 20
+      length: 56
+      interp: pow3Out
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: 597880FF
+      colorTo: 59788000
+      }
+      {
+      type: ParticleEffect
+      particles: 28
+      lifetime: 110
+      layer: 100.3
+      cone: 20
+      length: 64
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: 597880FF
+      colorTo: 59788000
+      }
+    ]
+    shootEffect: [
+      {
+      type: ParticleEffect
+      particles: 18
+      lifetime: 90
+      layer: 100.3
+      cone: 20
+      length: 48
+      line: true
+      interp: pow3Out
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: 6E6E79FF
+      colorTo: 6E6E7900
+      }
+      {
+      type: SoundEffect
+      sound: shootAfflict
+      minVolume: 0.4
+      maxVolume: 0.55
+      effect: [
+          {
+          type: SoundEffect
+          sound: shootPulsar
+          effect: none
+          }
+        ]
+      }
+    ]
+    trailColor: 6E6E79FF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 6
+    trailWidth: 2
+    trailEffect: [
+      {
+      type: ParticleEffect
+      particles: 6
+      lifetime: 90
+      layer: 100.3
+      cone: 20
+      length: 12
+      line: true
+      interp: pow3Out
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: 00C8FFFF
+      colorTo: 00B7EEFF
+      }
+    ]
+  }
+  er-mesolite:{
+    type: LaserBoltBulletType
+    damage: 250
+    shieldDamageMultiplier: 9.55
+    width: 4
+    height: 9
+    speed: 8
+    lifetime: 39
+    frontColor: C79E2CFF
+    backColor: A57C0AFF
+    chargeEffect: [lightningCharge, lancerLaserCharge, lancerLaserChargeBegin]
+    chargeSound: lancerCharge
+    smokeEffect: [
+      {
+      type: ParticleEffect
+      particles: 28
+      lifetime: 90
+      layer: 100.3
+      cone: 20
+      length: 56
+      interp: pow3Out
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: 597880FF
+      colorTo: 59788000
+      }
+      {
+      type: ParticleEffect
+      particles: 28
+      lifetime: 110
+      layer: 100.3
+      cone: 20
+      length: 64
+      interp: pow3Out
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: 597880FF
+      colorTo: 59788000
+      }
+    ]
+    shootEffect: [
+      {
+      type: ParticleEffect
+      particles: 18
+      lifetime: 90
+      layer: 100.3
+      cone: 20
+      length: 48
+      line: true
+      interp: pow3Out
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: C79E2CFF
+      colorTo: A57C0AFF
+      }
+      {
+      type: SoundEffect
+      sound: shootAfflict
+      minVolume: 0.4
+      maxVolume: 0.55
+      effect: [
+          {
+          type: SoundEffect
+          sound: shootPulsar
+          effect: none
+          }
+        ]
+      }
+    ]
+    trailColor: C79E2CFF
+    trailInterval: 1
+    trailRotation: true
+    trailLength: 6
+    trailWidth: 2
+    trailEffect: [
+      {
+      type: ParticleEffect
+      particles: 6
+      lifetime: 90
+      layer: 100.3
+      cone: 20
+      length: 12
+      line: true
+      interp: pow3Out
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: 00C8FFFF
+      colorTo: 00B7EEFF
+      }
+    ]
+  }
+}

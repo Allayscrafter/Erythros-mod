@@ -1,0 +1,19 @@
+name: Overclocked
+effect: {
+  type: ParticleEffect
+  particles: 10
+  sizeFrom: 0.7
+  sizeTo: 0
+  line: true
+  colorFrom: dddd88ee
+  colorTo: cccc660000
+  length: 15
+  lifetime: 40
+  cone: 360
+  interp: pow3Out
+  sizeInterp: pow2Out
+  line: false
+}
+speedMultiplier: 1.75
+healthMultiplier: 1.15
+reloadMultiplier: 1.5

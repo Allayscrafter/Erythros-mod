@@ -1,0 +1,11 @@
+type: liquid
+name: "[#42A160]Xylogen[]"
+color: 42A160FF
+flammability: 0.2
+explosiveness: 0.2
+heatCapacity: 0.2
+temperature: 0.3
+gas: true
+gasColor: 42A160FF
+blockReactive: false
+coolant: false
