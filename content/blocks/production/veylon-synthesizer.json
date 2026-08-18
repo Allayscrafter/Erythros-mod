@@ -37,7 +37,7 @@ drawer: {
       type: DrawLiquidTile
       drawLiquid: er-hf-acid
       padTop: 2
-      padLeft: 17
+      padLeft: 15
       padRight: 2
       padBottom: 2
     }
@@ -46,15 +46,15 @@ drawer: {
       drawLiquid: er-hf-acid
       padTop: 2
       padLeft: 2
-      padRight: 17
+      padRight: 15
       padBottom: 2
     }
     {
       type: DrawLiquidTile
       drawLiquid: er-sulphroil
       padTop: 2
-      padLeft: 7
-      padRight: 7
+      padLeft: 9
+      padRight: 9
       padBottom: 2
     }
     {
@@ -75,4 +75,4 @@ drawer: {
   ]
 }
 ambientSound: loopThoriumReactor
-ambientSoundVolume: 0.08
+ambientSoundVolume: 0.2
