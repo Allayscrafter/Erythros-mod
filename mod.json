@@ -2,8 +2,8 @@ name: erythros
 displayName: Erythros
 author: allayscrafter
 description: Very work in progress
-subtitle: meow
-minGameVersion: 146
+subtitle: wip
+minGameVersion: 159.7
 hidden: false
 hideBrowser: true
 contentOrder: [
