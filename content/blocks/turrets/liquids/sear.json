@@ -1,0 +1,112 @@
+name: Sear
+description: laser
+type: LiquidTurret
+size: 2
+squareSprite: false
+health: 720
+shootSound: shootLaser
+hasItems: false
+hasPower: true
+hasLiquids: true
+shootEffect: [
+     {
+       type: ParticleEffect
+       particles: 5
+       lifetime: 30
+       layer: 100.9
+       cone: 15
+       length: 136
+       sizeFrom: 3.5
+       sizeTo: 2
+       sizeInterp: pow3in
+       colorFrom: FF9A2AFF
+       colorTo: 882311FF
+     }
+     {
+       type: ParticleEffect
+       particles: 10
+       lifetime: 25
+       layer: 100.8
+       cone: 17
+       length: 128
+       sizeFrom: 3
+       sizeTo: 0.5
+       sizeInterp: pow3in
+       colorFrom: FF9A2AFF
+       colorTo: 5A2A0AFF
+     }
+     {
+       type: ParticleEffect
+       particles: 15
+       lifetime: 25
+       layer: 100.7
+       cone: 11
+       length: 150
+       sizeFrom: 1.5
+       sizeTo: 2.6
+       sizeInterp: pow2out
+       colorFrom: 5A2A0AFF
+       colorTo: 231107FF
+     }
+     {
+       type: ParticleEffect
+       particles: 12
+       lifetime: 25
+       layer: 100.6
+       cone: 11
+       length: 150
+       sizeFrom: 1.5
+       sizeTo: 2.9
+       colorFrom: 777777FF
+       colorTo: 22222255
+     }
+   ]
+requirements: [
+  er-tin/45
+  er-bismuth/70
+]
+category: turret
+consumes: {
+  power: 3
+} 
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: allay-
+  parts: [
+     {
+        type: RegionPart
+        suffix: -top
+        mirror: false
+        under: false
+      } 
+  ]
+}
+recoil: 1
+outlineRadius: 2
+targetAir: true
+targetGround: true
+rotateSpeed: 3
+reload: 2
+range: 120
+inaccuracy: 10
+shootY: 4
+ammoTypes: {
+  er-sulphroil: {
+    type: BasicBulletType
+    lifetime: 20
+    speed: 6
+    damage: 11
+    hitSize: 28
+    pierce: true
+    frontColor: 00000000
+    backColor: 00000000
+    hitEffect: none
+    despawnEffect: none
+  }
+}
