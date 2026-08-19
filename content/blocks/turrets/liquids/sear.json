@@ -18,7 +18,7 @@ shootEffect: [
        length: 136
        sizeFrom: 3.5
        sizeTo: 2
-       sizeInterp: pow3in
+       sizeInterp: pow3In
        colorFrom: FF9A2AFF
        colorTo: 882311FF
      }
@@ -31,7 +31,7 @@ shootEffect: [
        length: 128
        sizeFrom: 3
        sizeTo: 0.5
-       sizeInterp: pow3in
+       sizeInterp: pow3In
        colorFrom: FF9A2AFF
        colorTo: 5A2A0AFF
      }
@@ -44,7 +44,7 @@ shootEffect: [
        length: 150
        sizeFrom: 1.5
        sizeTo: 2.6
-       sizeInterp: pow2out
+       sizeInterp: pow2Out
        colorFrom: 5A2A0AFF
        colorTo: 231107FF
      }
