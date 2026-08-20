@@ -14,7 +14,7 @@ shootEffect: [
        particles: 5
        lifetime: 30
        layer: 100.9
-       cone: 15
+       cone: 7
        length: 136
        sizeFrom: 3.5
        sizeTo: 2
@@ -27,7 +27,7 @@ shootEffect: [
        particles: 10
        lifetime: 25
        layer: 100.8
-       cone: 17
+       cone: 8
        length: 128
        sizeFrom: 3
        sizeTo: 0.5
@@ -40,7 +40,7 @@ shootEffect: [
        particles: 15
        lifetime: 25
        layer: 100.7
-       cone: 11
+       cone: 6
        length: 150
        sizeFrom: 1.5
        sizeTo: 2.6
@@ -53,7 +53,7 @@ shootEffect: [
        particles: 12
        lifetime: 25
        layer: 100.6
-       cone: 11
+       cone: 6
        length: 150
        sizeFrom: 1.5
        sizeTo: 2.9
@@ -94,7 +94,7 @@ targetGround: true
 rotateSpeed: 3
 reload: 2
 range: 120
-inaccuracy: 10
+inaccuracy: 5
 shootY: 4
 ammoTypes: {
   er-sulphroil: {
