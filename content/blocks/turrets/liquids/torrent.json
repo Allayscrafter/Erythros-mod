@@ -1,5 +1,5 @@
 name: Torrent
-description: shoot liquids
+description: Consumes liquids and shoots them in bursts.
 type: LiquidTurret
 health: 950
 size: 2

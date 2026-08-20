@@ -1,5 +1,5 @@
 name: Sheaf
-description: An advanced anti air turret. Shoots flak ammo in a cone.
+description: Shoots bunches of artillery in a spread.
 type: ItemTurret
 size: 3
 squareSprite: false
@@ -71,7 +71,7 @@ ammoTypes: {
   }
   er-thermite: {
     type: artilleryBulletType
-    splashDamage: 30
+    splashDamage: 34
     splashDamageRadius: 16
     splashDamagePierce: true
     minRangeChange: 56

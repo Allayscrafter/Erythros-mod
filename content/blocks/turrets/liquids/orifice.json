@@ -1,5 +1,5 @@
 name: Orifice
-description: shoot liquids
+description: Releases a continuous stream of gases.
 type: ContinuousLiquidTurret
 health: 950
 size: 2

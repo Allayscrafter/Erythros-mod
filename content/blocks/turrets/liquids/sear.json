@@ -1,5 +1,5 @@
 name: Sear
-description: laser
+description: Consumes flammable liquids and fires a continuous stream of fire.
 type: LiquidTurret
 size: 2
 squareSprite: false

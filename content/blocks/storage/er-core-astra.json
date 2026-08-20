@@ -14,7 +14,7 @@ health: 4200
 armor: 6
 itemCapacity: 2500
 unitCapModifier: 10
-solid: false
+solid: true
 category: effect
 research: {
   planet: erythros

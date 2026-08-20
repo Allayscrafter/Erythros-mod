@@ -1,5 +1,5 @@
 name: Clast
-description: Shoots bullets while slowly warming up. Shrapnel damages units that are very close.
+description: Shoots bullets. Shrapnel damages units that are very close.
 type: ItemTurret
 size: 3
 squareSprite: false

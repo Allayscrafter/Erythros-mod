@@ -42,7 +42,7 @@ targetAir: true
 targetGround: true
 rotateSpeed: 3
 recoil: 1
-reload: 30
+reload: 50
 range: 130
 shootY: 4.4
 ammoPerShot: 1

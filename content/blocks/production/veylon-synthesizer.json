@@ -53,8 +53,8 @@ drawer: {
       type: DrawLiquidTile
       drawLiquid: er-sulphroil
       padTop: 2
-      padLeft: 9
-      padRight: 9
+      padLeft: 8
+      padRight: 8
       padBottom: 2
     }
     {

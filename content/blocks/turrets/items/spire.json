@@ -55,8 +55,8 @@ ammoTypes: {
   er-bismuth: {
     type: FlakBulletType
     damage: 7
-    width: 7
-    height: 9.5
+    width: 3.4
+    height: 6.5
     shrinkX:0
     shrinkY:0
     speed: 10
@@ -114,8 +114,8 @@ shootEffect: [
 er-stanno-bismuth-glass: {
     type: FlakBulletType
     damage: 6
-    width: 7
-    height: 9.5
+    width: 3.4
+    height: 6.5
     shrinkX:0
     shrinkY:0
     speed: 10

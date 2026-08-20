@@ -45,7 +45,7 @@ ammoTypes: {
     er-stanno-bismuth-glass: {
         type: flakBulletType
         damage: 16
-        splashDamage: 16
+        splashDamage: 25
         splashDamageRadius: 10
         explodeRange: 15
         speed: 4.5
@@ -91,8 +91,8 @@ ammoTypes: {
         fragBullets: 3
         fragBullet: {
             type: flakBulletType
-            damage: 3
-            splashDamage: 3
+            damage: 9
+            splashDamage: 12
             splashDamageRadius: 6
             explodeRange: 10
             speed: 2
@@ -138,7 +138,7 @@ ammoTypes: {
     er-veylon: {
         type: flakBulletType
         damage: 25
-        splashDamage: 25
+        splashDamage: 34
         splashDamageRadius: 10
         explodeRange: 10
         speed: 4.5
@@ -185,15 +185,15 @@ ammoTypes: {
         fragBullet: {
             type: lightningBulletType
             collidesAir: true
-            damage: 6
+            damage: 14
             lightningLength: 4
             lightningColor: 2F8099FF
         }
     }
     er-dense-alloy: {
         type: flakBulletType
-        damage: 32
-        splashDamage: 32
+        damage: 47
+        splashDamage: 49
         splashDamageRadius: 13
         explodeRange: 10
         speed: 4.5
@@ -245,7 +245,7 @@ ammoTypes: {
             length: 12
             width: 10
             serrations: 0
-            damage: 16
+            damage: 32
             fromColor: 6E6E79FF
             toColor: 4C4C57FF
         }
