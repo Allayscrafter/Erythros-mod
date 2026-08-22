@@ -42,7 +42,7 @@ outlineRadius: 3
 targetAir: true
 targetGround: true
 rotateSpeed: 3
-reload: 15
+reload: 25
 range: 175
 shootY: 6
 ammoPerShot: 1

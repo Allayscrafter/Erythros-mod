@@ -45,7 +45,7 @@ heatColor: 4FC3F7
 outlineRadius: 3
 targetAir: true
 targetGround: true
-rotateSpeed: 2
+rotateSpeed: 1.8
 reload: 240
 range: 312
 shootY: 6.5

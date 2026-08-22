@@ -35,7 +35,7 @@ recoils: 1
 outlineRadius: 3
 targetAir: true
 targetGround: false
-rotateSpeed: 1
+rotateSpeed: 2.8
 reload: 45
 range: 180
 inaccuracy: 4

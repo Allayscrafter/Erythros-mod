@@ -88,7 +88,7 @@ drawer: {
   ]
 }
 recoil: 1
-outlineRadius: 2
+outlineRadius: 3
 targetAir: true
 targetGround: true
 rotateSpeed: 3
